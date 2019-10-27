@@ -1,0 +1,348 @@
+/**
+
+===============================================================
+
+	author:王恩�?
+
+	name: CSS重置样式 公用�?
+
+	date:2013-10-30 11:34 AM
+
+	version:2.0 beta
+
+	Q   Q:  1764387002
+
+===============================================================
+
+**/
+
+
+html, body, div, p, ul, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, form, input, select, button, textarea, iframe, table, th, td {
+
+	margin: 0;
+
+	padding: 0;
+
+}
+
+body{/*Font-size=62.5%,"Arial Narrow",HELVETICA;*/ text-align:left; line-height:1.2; background:#dadada !important;}
+
+/*A*/
+
+a{
+
+	text-decoration:none;
+
+}
+
+a:hover{
+
+	text-decoration:none;
+
+}
+
+/*img*/
+
+img{ border:0 none; vertical-align:top;}
+
+/*li*/
+
+ul,li{list-style-type:none;}
+
+/*浮动*/
+
+.fl{
+
+	float:left;
+
+	display:inline;
+
+}
+
+.fr{
+
+	float:right;
+
+	display:inline;
+
+}
+
+.cl{
+
+	clear:both;
+
+}
+
+.clearfix:after {
+
+	visibility: hidden;
+
+	display: block;
+
+	content: " ";
+
+	clear: both;
+
+	height: 0;
+
+	line-height: 0;
+
+}
+
+.clearfix {
+
+	zoom: 1;
+
+}
+
+img{boder:0;}
+
+ a{blr:expression(this.onFocus=this.close());} /* 只支持IE，过多使用效率低 */
+
+       a{blr:expression(this.onFocus=this.blur());} /* 只支持IE，过多使用效率低 */
+
+      a:focus { -moz-outline-style: none; } /* IE不支�?*/
+
+      a:focus { outline: none; } /*很多网站都会加的属�?/
+
+.clear{clear:both;}
+
+/*wrap*/
+
+#wrap{text-align:left;}
+
+/*宽度*/
+
+.w1000{
+
+	width:1000px;
+
+	margin:0 auto;
+
+	overflow:hidden;
+
+}
+
+.w560{
+
+	width:560px;
+
+	margin:0 auto;
+
+	overflow:hidden;
+
+}
+
+.w1001{
+
+	width:1002px;
+
+	margin:0 auto;
+
+
+}
+
+.w1003{
+
+	width:1003px;
+
+	margin:0 auto;
+
+}
+
+.w1154{
+
+	width:1154px;
+
+	margin:0 auto;
+
+	overflow:hidden;
+
+}
+
+.w1280{
+
+	width:1280px;
+
+	margin:0 auto;
+
+	overflow:hidden;
+
+}
+
+.w1003{
+
+	width:1003px;
+
+	margin:0 auto;
+
+
+}
+
+.w1004{
+
+	width:1003px;
+
+	margin:0 auto;
+
+}
+
+.w1216{
+
+	width:1216px;
+
+	margin:0 auto;
+
+	padding:0;
+
+
+
+}
+
+.pc_100{
+
+	width:100%;
+
+	overflow:hidden;
+
+}
+
+.mb-none{
+
+	margin-bottom:0px;
+
+}
+
+.mr-none{
+
+	margin-right:0px !important;
+
+}
+
+.border{
+
+	border:none !important
+
+}
+.work-list-btn {
+    width: 150px;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.work-list-btn a {
+    background: url(//img.alicdn.com/imgextra/i4/1105832541/TB2IkVpXw_xQeBjy0FoXXX1vpXa_!!1105832541.png) no-repeat;
+    width: 130px;
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    color: #525252;
+}
+.page-topbanner-content {
+    text-align: center;
+}
+.page-left {
+    background: url(//img.alicdn.com/imgextra/i4/1105832541/TB2sw0pXBPxQeBjy1XcXXXHzVXa_!!1105832541.png) no-repeat;
+    width: 61px;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    margin-top: -60px;
+}
+.page-right {
+    background: url(//img.alicdn.com/imgextra/i4/1105832541/TB2uORpXxrxQeBjy1zeXXXhAVXa_!!1105832541.png) no-repeat;
+    width: 61px;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    margin-top: -60px;
+}
+.page-left:hover {
+    background: url(//img.alicdn.com/imgextra/i2/1105832541/TB2BBpnXuYyQeBjSszcXXbIRpXa_!!1105832541.png) no-repeat;
+    width: 61px;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+    position: fixed;
+    left: 2%;
+    top: 50%;
+    margin-top: -60px;
+}
+.page-right:hover {
+    background: url(//img.alicdn.com/imgextra/i3/1105832541/TB2S00pXBYxQeBjSspdXXb6QXXa_!!1105832541.png) no-repeat;
+    width: 61px;
+    height: 120px;
+    display: block;
+    text-indent: -9999px;
+    position: fixed;
+    right: 2%;
+    top: 50%;
+    margin-top: -60px;
+}
+
+/*mt*/
+
+.mt6{margin-top:6px;}
+
+.mt10important{margin-top:10px !important;}
+
+.mt15{margin-top:15px;}
+
+.mt15important{margin-top:15px !important;}
+
+.mt20{ margin-top:20px !important;}
+
+/*颜色red*/
+
+.red{color:red;}
+
+.green{color:#B5FF00}
+
+/*more按钮*/
+
+.more{
+
+	float:right;
+
+	margin:13px 10px 0 0;
+
+}
+
+.more2{
+
+	float:right;
+
+	margin:26px 10px 0 0;
+
+}
+
+/*button*/
+
+button{ cursor:pointer;}
+
+
+
+/*i,em重置*/
+
+i,em{ font-style:normal;}
+
+/*居中*/
+
+.tc{ text-align:center;}
+
+.mauto{margin:0 auto;}
+
+
+
+.center{margin:0 auto;}
+
+.border{ border:1px solid red;}
+
+.text{color:#666666;}

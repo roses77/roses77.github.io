@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "icomoon";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/icomoond41d.html?#iefix-np5n7a") format("embedded-opentype"), url("../fonts/icomoonbd7e.html?-np5n7a") format("truetype"), url("../fonts/icomoonbd7e-2.html?-np5n7a") format("woff"), url("../fonts/icomoonbd7e-3.html?-np5n7a#icomoon") format("svg");
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.about h2{
+    color: #bec8d2;
+    font-size: 48px;
+    line-height: 45px;
+    padding-top: 20px;
+}
+.about h3{
+    color: #515465;
+    font-size: 38px;
+}
+.about p{
+    color: #515465;
+    font-size: 14px;
+    line-height: 25px;
+}
+.icolist .items, .icolist1 .items{position: relative;padding: 0 17px;}
+.icolist .items .ad {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/imgextra/i2/1105832541/TB2OzgyuXXXXXXbXXXXXXXXXXXX_!!1105832541.png") repeat scroll -474px 0;
+    height: 40px;
+    position: absolute;
+    right: -40px;
+    width: 40px;
+}
+.icolist1 .items .ad1 {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/imgextra/i4/1105832541/TB2T62EuXXXXXX2XFXXXXXXXXXX_!!1105832541.png") repeat scroll -474px 0;
+    height: 40px;
+    position: absolute;
+    right: -40px;
+    width: 40px;
+}
+.icolist .items span {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/imgextra/i2/1105832541/TB2OzgyuXXXXXXbXXXXXXXXXXXX_!!1105832541.png") no-repeat scroll;
+    display: block;
+    height: 119px;
+    margin: auto;
+    width: 119px;
+}
+.icolist1 .items span {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/imgextra/i4/1105832541/TB2T62EuXXXXXX2XFXXXXXXXXXX_!!1105832541.png") no-repeat scroll;
+    display: block;
+    height: 119px;
+    margin: auto;
+    width: 119px;
+}
+.items.qj{color: #fe0000;}
+.items.bj{color:#ff6600;}
+.items.td{color:#ffae02;}
+.items.ys{color:#7dd300;}
+.items.qj span{background-position: 0 0;}
+.items.bj span{background-position: -119px 0;}
+.items.td span{background-position: -238px 0;}
+.items.ys span{background-position: -357px 0;}
+.icolist .items div, .icolist1 .items div {
+    font-size: 24px;
+    margin: 40px 0;
+    text-align: center;
+}
+.icolist .items p, .icolist1 .items p {
+    color: #666666;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: left;
+}
+.promotelist{}
+.promotelist .box{padding: 0 10px 30px;}
+.promotelist .items{
+    border: 2px dotted #d6d6d6;
+    padding-bottom: 30px;
+}
+.promotelist .items h5 {
+    background: rgba(0, 0, 0, 0) url("//img.alicdn.com/imgextra/i1/1105832541/TB26RkKuXXXXXXDXpXXXXXXXXXX_!!1105832541.png") no-repeat scroll 0 0;
+    color: #fff;
+    font: 18px/49px "microsoft yahei";
+    height: 49px;
+    position: relative;
+    top: -25px;
+    width: 166px;
+    margin:0 auto;
+}
+.promotelist .items h5 i {
+    padding: 0 20px 0 15px;
+}
+.promotelist .items h3 {
+    color: #056397;
+    font: 20px/40px "microsoft yahei";
+    text-align: center;
+}
+.promotelist .items p {
+    color: #666;
+    font: 14px/24px "microsoft yahei";
+    text-align: center;
+}
+.about2 .rtxt{padding:145px 0 0 95px;}
+.about2 .rtxt .content{width: 600px;}
+.about2 .rtxt .content p{text-indent: 2em;vertical-align: baseline;font-size: 16px;line-height: 1.7;margin-bottom: 3%;}
+.about2 .rtxt .content p.color1{color: #999;}
+.about5{padding-top:30px;}
+.about5 .items{margin-left: 15px;margin-right:3px;}
+.about5 .items{
+    background-color: #fff;
+    box-shadow: 1px 1px 2px #e0e0e0;
+    color: #3e5253;
+    height: 210px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 2em;
+}
+.about5 .icon_q {
+    color: #2db166;
+    font-size: 80px;
+    line-height: 1.5em;
+    margin-top: 5px;
+    font-family: icomoon;
+}
+.about6 .hd{}
+.about6 .hd h2 {
+    color: #0078bd;
+    font-size: 34px;
+}
+.about6 .hd .dline{
+    background: #cbcbcb;
+    width: 70px;
+    height: 3px;
+    margin: 22px auto;
+}
+.about6 .hd p{}
+.mod-cp-form {
+    width: 460px;
+    margin: 50px auto 0;
+}
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    -webkit-user-modify: read-write-plaintext-only;
+}
+button, select {
+    text-transform: none;
+}
+.ui-input, .ui-select, .ui-textarea {
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background: #f2f2f2;
+    font-size:14px;
+}
+.ui-select {
+    height: 50px;
+    width: 460px;
+}
+.ui-form-item {
+    position: relative;
+    margin-bottom: 13px;
+}
+.ui-form-item .required {
+    position: absolute;
+    left: -22px;
+    top: 18px;
+    color: #e80000;
+}
+.ui-form-item .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    color: #999;
+    text-indent: 15px;
+}
+.ui-form-item .check {
+    position: absolute;
+    display: none;
+    left: 480px;
+    top: 9px;
+    white-space: nowrap;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 10px 0 30px;
+    border: 1px solid #FFB0B0;
+    color: #AD5F5F;
+    background: url(../../../cdn.eteams.cn/site/img/ico_warning_14.png) no-repeat 6px 7px #FFF4F4;
+}
+.ui-form-item .holder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    line-height: 50px;
+    color: #999;
+    text-indent: 15px;
+}
+.ui-textarea {
+    min-height: 100px;
+    height: 130px;width:460px;
+}
+.mod-cp-form .submit-btn {
+    background: #7dae24;
+    display: block;
+    margin: 0 auto;
+    height: 45px;
+    line-height: 30px;
+    width: 280px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+}
+input[type="text"]{width: 460px;padding:14px 15px;background: #f2f2f2;}
+.about4{}
+.about4 .content{
+    height: 460px;
+    background: url("//img.alicdn.com/imgextra/i2/1105832541/TB20YJFXaryQeBjSszdXXaL.XXa_!!1105832541.png") center no-repeat;
+    padding-left: 80px;
+}
+.about4 .content>div{
+    float: left;
+    color: #fff;
+    margin: 203px 50px 0 0;
+    width: 171px;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+}
+.icolist, .icolist1{ padding-top:100px; padding-bottom:80px;}

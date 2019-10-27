@@ -1,0 +1,301 @@
+#slider{width:990px;height:312px;overflow:hidden;position:relative;margin:0 auto;}
+.scroll{width:900px;height:312px;margin:0 auto;overflow:hidden;position:relative;}
+.scrollContainer{position: relative;width:1815px;left:0px;color: #717171;vertical-align: middle;}
+.scrollContainer .current .inside{width:230px;height:288px;}
+.panel .inside{display:block;position:relative; }
+.inside img{height:100%;width:100%;}
+.scroll li{}
+.scroll li .inside span{width:197px;height:37px;line-height:37px;display:none;position:absolute;bottom:-17px;left:16px;background-color:#c69;font-size:14px;color:#FFF;text-align:center;}
+.scroll li.current .inside span{display:block;}
+.btnMode a.btn{background:url('//img.alicdn.com/imgextra/i2/1105832541/TB2t7c0XeTyQeBjSspfXXaI3FXa_!!1105832541.png') no-repeat;}
+.btnMode a.btn{width:20px; height:39px;position:absolute;top:125px; }
+.btnMode a.prev{left:0;background-position:0 -61px;}
+.btnMode a.prev:hover{background-position:0 -102px;}
+.btnMode a.next{right:0;background-position:-50px -61px;}
+.btnMode a.next:hover{background-position:-50px -102px;}
+
+
+
+ .aboutMeBG {
+    height: 740px;
+    background-image: url("images/aboutMeBG.html");
+    background-repeat: no-repeat;
+    background-position: top center;
+    text-align: center;
+    color: #fff;
+}
+ .aboutMeBG h1 {
+    padding-top: 235px;
+    line-height: 90px;
+    font-size: 40px;
+}
+
+ .aboutMeBG h1 span {
+    color: #ff5733;
+}
+ .aboutMeBG p {
+    color: #fff;
+    font-size: 20px;
+    line-height: 35px;
+    letter-spacing: 2px;
+} {
+    padding-top: 95px;
+} .section fieldset {
+    border-top: 1px solid #cccccc;
+    padding-bottom: 70px;
+    text-align: center;
+} .section fieldset h1 {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    top: 12px;
+    margin-top: -58px;
+    color: #f08200;
+} .section {
+    margin-bottom: 95px;
+} .section legend {
+    display: block;;
+    text-align: center;
+    width: 470px;
+    height: 65px;
+    background-position: top center;
+    background-repeat: no-repeat;
+} #sec1 legend {
+    background-image: url("images/oranllcBG.html");
+}
+.info p {
+    margin: 0 auto;
+    width: 755px;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    color: #8a8a8a;
+    margin-bottom: 25px;
+} #sec1 .info p span {
+    color: #f08200;
+} #sec1 .idea {
+    background-color: #f5f9fa;
+    padding-bottom: 35px;
+    overflow: hidden;
+} #sec1 .idea h1 {
+    font-weight: 300;
+    text-align: center;
+    padding: 45px 0 40px;
+} #sec1 .idea .itemWrap {
+    margin-right: -95px;
+ } #sec1 .idea .itemWrap .item {
+    display: inline-block;
+    width: 217px;
+    height: 135px;
+    margin-left: 50px;
+    margin-right: 95px;
+    overflow: hidden;
+} #sec1 .idea .item i {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-image: url("images/idea.html");
+} #sec1 .idea .item .itemInfo {
+    display: inline-block;
+    width: 159px;
+    height: 118px;
+    overflow: hidden;
+    vertical-align: top;
+} #sec1 .idea .item .itemInfo h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+} #sec1 .idea .item .itemInfo p {
+    line-height: 25px;
+    color: #797b7b;
+    font-size: 14px;
+} #sec1 .idea .item .operate {
+    background-position: -35px -22px;
+} #sec1 .idea .item .manage {
+    background-position: -114px -22px;
+} #sec1 .idea .item .developing {
+    background-position: -195px -22px;
+} #sec1 .idea .item .mission {
+    background-position: -35px -104px;
+} #sec1 .idea .item .vision {
+    background-position: -110px -104px;
+} #sec1 .idea .item .aims {
+    background-position: -195px -104px;
+}#sec2 legend {
+    background-image: url("images/teamBG.html");
+}#sec2 .info p {
+    color: #000;
+}#sec2 .info .teamPic {
+    margin: 0 auto;
+    width: 980px;
+    display: block;
+    margin-bottom: 33px;
+}#sec2 .info .mark {
+    display: inline-block;
+    width: 45px;
+    height: 30px;
+    background-image: url("//img.alicdn.com/imgextra/i4/1105832541/TB236w1XanyQeBjy1zkXXXmyXXa_!!1105832541.png");
+    background-repeat: no-repeat;
+    background-size: 100px;
+}#sec2 .info .up {
+    background-position: -2px -2px;
+    vertical-align: bottom;
+}#sec2 .info .down {
+    background-position: -63px -13px;
+    vertical-align: bottom;
+} #sec3 legend {
+    background-image: url("images/recruitment.html");
+} #sec3 .info .title {
+    margin-bottom: 50px;
+} #sec3 .info .title li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 15px;
+    color: #f39803;
+
+} #sec3 .info .infoContent {
+    display: none;
+} #sec3 .info .title .active span {
+    background-color: #f39803;
+    color: #fff;
+} #sec3 .info .title li span {
+    display: block;
+    width: 128px;
+    padding: 12px 0;
+    cursor: pointer;
+    border: 1px solid #f39803;
+} #sec3 .info  .title .active .arrow {
+    position: relative;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 12px solid #f39803;
+} #sec3 .info .infoContent p {
+    width: 1002px;
+    text-align: left;
+} #sec3 .info .infoContent span {
+    display: block;
+} #sec3 .info .infoContent {
+    display: none;
+} #sec3 .info #uiPer {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+     {
+        padding-top: 50px;
+    }
+     .aboutMeBG {
+        width: 100%;
+        height: auto;
+        background-size: cover;
+        padding-bottom: 40%;
+        margin-bottom: 30px;
+    }
+     .aboutMeBG h1 {
+        width: 100%;
+        padding-top: 14%;
+        vertical-align: middle;
+        line-height: inherit;
+        padding-bottom: 10px;
+        font-size: 1.5em;
+    }
+     .aboutMeBG p {
+        width: 80%;
+        margin: 0 auto;
+        font-size: 1em;
+        line-height: 20px;
+        letter-spacing: 0.2em;
+    } {
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 0;
+    } .section fieldset {
+        width: 100%;
+        padding-bottom: 15px;
+    } .section fieldset h1 {
+        font-size: 1.5em;
+    } .section {
+        margin-bottom: 55px;
+    } .section legend {
+        width: 70%;
+        height: 40px;
+        background-size: 90%;
+    } .section .info p {
+        width: 100%;
+        text-align: left;
+        font-size: 1em;
+    } #sec1 .idea {
+        padding-bottom: 0;
+    } #sec1 .idea h1 {
+        padding: 30px 0;
+        font-size: 1.4em;
+    } #sec1 .idea .itemWrap {
+        width: 100%;
+        margin-right: 0;
+    } #sec1 .idea .itemWrap .item {
+        position: relative;
+        margin: 0 auto;
+        width: 90%;
+        margin-bottom: 30px;
+        top: 0;
+        left: 0;
+    } #sec1 .idea .item i {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        background-size: 450%;
+    } #sec1 .idea .item .itemInfo {
+        display: inherit;
+        padding-left: 40px;
+        width: auto;
+    } #sec1 .idea .item .itemInfo h3 {
+        font-size: 1.2em;
+        padding-top: 10px;
+    } #sec1 .idea .item .itemInfo p {
+        width: 100%;
+        line-height: 1.8;
+        font-size: 1em;
+    } #sec1 .idea .item .operate {
+        background-position: -17px -7px;
+    } #sec1 .idea .item .manage {
+        background-position: -68px -11px;
+    } #sec1 .idea .item .developing {
+        background-position: -116px -13px;
+    } #sec1 .idea .item .mission {
+        background-position: -20px 44px;
+    } #sec1 .idea .item .vision {
+        background-position: -65px 44px;
+    } #sec1 .idea .item .aims {
+        background-position: -116px 44px;
+    }#sec2 .info .teamPic {
+        width: 100%;
+        height: auto;
+        margin-bottom: 25px;
+    }#sec2 .info .mark {
+        width: 19px;
+        height: 27px;
+        background-size: 189%;
+    }#sec2 .info .up {
+        background-position: 0 -2px;
+    }#sec2 .info .down {
+        background-position: -22px -2px;
+    } #sec3 .info .title {
+        margin-bottom: 10%;
+    } #sec3 .info .title li {
+        margin-bottom: 5px;
+        width: 44%;
+    } #sec3 .info .title li span {
+        width: 100%;
+    } #sec3 .info  .title .active .arrow {
+        display: none;
+    } #sec3 .info .infoContent p {
+        width: auto;
+    }
+
+
+}
