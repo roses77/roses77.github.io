@@ -1,0 +1,2 @@
+
+Warning: file_get_contents(http:/img.weiot.net/portal/201511/23/103335vtta3qyrgyx3sedq.jpeg): failed to open stream: No such file or directory in /data/home/hyu1111480001/htdocs/getimg.php on line 52
