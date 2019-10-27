@@ -1,0 +1,1424 @@
+
+
+
+
+
+	
+	<!-- 公共头部 -->
+	
+
+
+
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Mirrored from www.bumeng.cn/document/API by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Aug 2016 11:06:49 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta content="text/html;" http-equiv="Content-Type">
+	<title>MicIoE微物联网络区块链-可信开放的数字资产平台</title>
+	<meta name="keywords" content="MicIoE微物联网络区块链，Bumeng，数字资产，数字万物，区块链，区块链应用，区块链应用开发" >
+	<meta name="description" content="MicIoE微物联网络区块链数字资产平台基于MicIoE@区块链技术，针对商业积分、游戏道具、数字版权、慈善公益、互助保险、身份认证等应用场景进行应用层接口封装，帮助崇尚“数字资产自由流通，数据自己做主”的企业/开发者快速在区块链上发行自己的数字资产应用">
+	<meta name="author" content="MicIoE微物联网络区块链" >
+	<meta name="copyright" content="MicIoE微物联网络区块链" >
+	<meta name="format-detection" content="telephone=no"/>
+	<link href="../common/images/favicon.ico" rel="icon" type="image/x-icon" />
+	<link rel="stylesheet" href="../common/css/common.css" />
+	<link rel="stylesheet" href="../common/iconfont/iconfont.css" />
+	<link rel="stylesheet" href="../common/css/animate.css" />
+	<link rel="stylesheet" href="../common/css/main.css" />
+	<!--[if lt lte 9]><link rel="stylesheet" type="text/css" href="http://www.bumeng.cn/common/css/ie8-ie9.css"><![endif]-->
+</head>
+<body>
+
+	<div class="bm-header fixed">
+		<div class="bm-wrap clearfix">
+			
+			<a class="logo fl clearfix" href="../index.html">
+				<img class="bm-logo" src="//img.alicdn.com/imgextra/i2/1105832541/TB2uG0fXpHzQeBjSZFOXXcM9FXa_!!1105832541.png">
+			</a>
+
+			
+				<div class="passport-group">
+					<a class="btn-login" href="../user/login.html">登 录</a>
+					<a class="btn-reg" href="../../micioe/1.html" target="_blank">文 档</a>
+				</div>
+			
+
+			<ul class="nav-group fr clearfix">
+				<li class="list-item ">
+					<a class="link" href="../index.html">首页</a><ul class="sub-menu">
+<li><a href="../../index.html" target="_blank">IoT电邮</a></li>
+<li><a href="../../main/www.micioe.com" target="_blank">智能硬件</a></li>
+<li><a href="../../blockchain" target="_blank">@区块链</a></li>
+<li><a href="../../open/1.html" target="_blank">开放平台</a></li>
+<li><a href="../../micioe/1.html" target="_blank">物联应用</a></li>
+<li><a href="../../ioe" target="_blank"><font color=red>研究团队</font></a></li>
+</ul>
+				</li>
+				<li class="list-item ">
+					<a class="link" href="javascript:;">行业方案</a>
+					<ul class="sub-menu">
+						<li><a href="../scheme/game.html">游戏交易</a></li>
+						<li><a href="../scheme/integral.html">商业积分</a></li>
+						<li class="unactivated"><a href="javascript:;">慈善公益</a></li>
+						<li class="unactivated"><a href="javascript:;">互助保险</a></li>
+						<li class="unactivated"><a href="javascript:;">保险卡单</a></li>
+					</ul>
+				</li>
+				<li class="list-item devdoc active">
+					<a class="link" href="javascript:;">开发者文档</a>
+					<ul class="sub-menu">
+						<li><a href="noviciate.html">新手指南</a></li>
+						<li><a href="API.html">API 文档</a></li>
+						<li><a href="SDK.html">SDK文档</a></li>
+						<li><a href="download.html">资源下载</a></li><li><a href="http://weibo.com/fenzimeisi" target="_blank"><font color=red>官方微博</font></a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+
+
+
+	<div class="sub-nav broder-gray">
+		<div class="box">
+			<ul class="content">
+				<a href="noviciate.html"><li>新手指南</li></a>
+				<a class="active" href="API.html"><li>API</li></a>
+				<a href="SDK.html"><li>SDK文档</li></a>
+				<a href="download.html"><li>视觉资源下载</li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="doc J-doc">
+
+		<dl class="menu">
+			<!-- <h2 class="title">API</h2> -->
+			<dt class="current"><span class="marker" data-marker="getAccessToken">获取access_token</span></dt>
+			<dt><span class="marker" data-marker="regBubiAccount">注册区块链账户</span></dt>
+			<dt><span class="marker" data-marker="modifyBubiAccount">修改区块链账户</span></dt>
+			<dt><span class="marker" data-marker="issueAssetBySyn">同步发行数字资产</span></dt>
+			<dt><span class="marker" data-marker="issueAssetByASyn">异步发行数字资产</span></dt>
+			<dt><span class="marker" data-marker="addAssetInfoBySyn">同步追加发行数字资产</span></dt>
+			<dt><span class="marker" data-marker="addAssetInfoByASyn">异步追加发行数字资产</span></dt>
+			<dt><span class="marker" data-marker="transformAssetBySyn">同步数字资产转移</span></dt>
+			<dt><span class="marker" data-marker="transformAssetByASyn">异步数字资产转移</span></dt>
+			<dt><span class="marker" data-marker="getAccountInfo">获取账户信息</span></dt>
+			<dt><span class="marker" data-marker="getTransactionInfo">获取交易信息</span></dt>
+			<dt><span class="marker" data-marker="notice">MicIoE微物联网络区块链通知接口</span></dt>
+			<dt><span class="marker" data-marker="selectAccountRegStatus">查询账户注册状态</span></dt>
+			<dt><span class="marker" data-marker="selectAssetIssueStatus">查询数字资产发行状态</span></dt>
+			<dt><span class="marker" data-marker="selectAssetTransformStatus">查询数字资产转移状态</span></dt>
+			<dt><span class="marker" data-marker="errorCode">错误码</span></dt>
+			<dt><span class="marker" data-marker="signAlgorithm">签名算法</span></dt>
+		</dl>
+
+		<div data-marker="getAccessToken" class="con">
+			<h1>获取access_token</h1>
+			<p class="intro">access_token是MicIoE微物联网络区块链区块链应用开发平台的全局唯一凭据,开发者调用接口时都需要使用access_token。开发者需要将其妥善保存,access_token目前有效期是2个小时,重新获取后会将上次获取的access_token失效。</p>
+			<p class="intro">开发者需要将其妥善保存,access_token目前有效期是2个小时,重新获取后会将上次获取的access_token失效。</p>
+			<section id="getAccessToken1_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/oauth2/token?client_id=appId&amp;client_secret=appKey&amp;grant_type=client_credentials</p>
+				</div>
+			</section>
+			<section id="getAccessToken1_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>client_id</td><td>第三方用户唯一凭证,即appId</td></tr>
+						<tr><td>client_secret</td><td>第三方用户唯一凭证秘钥,即appkey</td></tr>
+						<tr><td>grant_type</td><td>获取access_token时需要填写的client_credentials</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+
+			<section id="getAccessToken1_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">{
+	"access_token":"0d375f84e588559602ff2fac016fe505",
+	"expires_in":7200
+}
+</pre><br>
+					<div>
+						<table class="table table-bordered">
+							<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+							<tr><td>access_token</td><td>获取到的票据</td></tr>
+							<tr><td>expires_in</td><td>票据的有效期,单位：秒</td></tr>
+						</tbody></table>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="regBubiAccount" class="con">
+			<h1>注册区块链账户</h1>
+
+			<section id="regBubiAccount2_1" class="">
+				<h2 class="explain">使用场景</h2>
+				<p class="intro">终端用户在使用应用时，需要对应的区块链账户进行相应的操作，此时需要用到区块链账户。终端用户注册涉及的属性，开发者可以自行定义。</p>
+			</section>
+
+			<section id="regBubiAccount2_2" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/account/v1/register?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p><p>
+</p><pre style="background: #dcdcdc;">	{
+        "user_name":"nan_jiang36",
+	    "password":"qaz123",
+	    "trade_no":"1000009820141203515766",
+        "metadata":"xxxxxxxx"
+	}
+</pre>
+				</div>
+			</section>
+
+			<section id="regBubiAccount2_3" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>user_name</td><td>账户名</td></tr>
+						<tr><td>password</td><td>账户密码</td></tr>
+						<tr><td>trade_no</td><td>凭据号,开发者需要保证其唯一</td></tr>
+						<tr><td>metadata</td><td>自定义字段</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+
+			<section id="regBubiAccount2_4" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"err_code":"0",
+	"msg":"成功",
+	"data":
+	{
+		"bubi_address":"bubiV8i7c3fM7MPFfjZsP4h1zGLUEix4gXUnX8Ft"
+	}
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="modifyBubiAccount" class="con">
+			<h1>修改区块链账户</h1>
+			<p class="intro">调用该接口开发者可以修改账户密码,新密码直接更换旧密码。</p>
+
+			<section id="modifyBubiAccount3_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/account/v1/alterPwd?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：
+</p><pre style="background: #dcdcdc;">{
+    "user_name":"nan_jiang36",
+    "new_password":"qaz123",
+    "trade_no":"1000009820141203515766"
+}
+</pre>
+					<p></p>
+				</div>
+			</section>
+
+			<section id="modifyBubiAccount3_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>user_name</td><td>账户名</td></tr>
+						<tr><td>new_password</td><td>账户新密码</td></tr>
+						<tr><td>trade_no</td><td>凭据号,开发者需要保证其唯一</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="modifyBubiAccount3_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"err_code":"0",
+	"msg":"成功",
+	"data":
+	{
+		"bubi_address":"bubiV8i7c3fM7MPFfjZsP4h1zGLUEix4gXUnX8Ft"
+	}
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="issueAssetBySyn" class="con">
+			<h1>同步发行数字资产</h1>
+			<p class="intro">开发者可以通过该接口自行发行数字资产。</p>
+			<p class="intro">当开发者发行带有效期的数字资产时,需要设置数字资产明细列表。具体见示例</p>
+			<section id="issueAssetBySyn4_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/issue?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+					<p class="lh-20">
+</p><pre style="background: #dcdcdc;">{
+	"password":"asd123",
+	"trade_no":"1000009820141203513322",
+	"asset_issuer":"bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+	"asset_name":"绿耳朵数字资产",
+	"asset_unit":"朵",
+	"asset_amount":"21300",
+        "body":"test asset",
+	"metadata":"xxxxx"
+}
+</pre>				
+					<p></p>
+				</div>
+			</section>
+
+			<section id="issueAssetBySyn4_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>password</td><td>待发行数字资产的账户密码</td></tr>
+						<tr><td>trade_no</td><td>第三方平台内部的订单号,如：2015121822992</td></tr>
+						<tr><td>asset_amount</td><td>发行数字资产数量。如 1250分（等价于12.5元）</td></tr>
+						<tr><td>asset_issuer</td><td>数字资产发行商的区块链地址</td></tr>
+						<tr><td>asset_name</td><td>数字资产名称（带中文,请用utf-8进行编码）</td></tr>
+						<tr><td>asset_unit</td><td>数字资产单位</td></tr>
+						<tr><td>body</td><td>说明（可选）</td></tr>
+						<tr><td>details</td><td>数字资产明细列表（可选）,若填写数字资产明细里的数字资产数量总和必须等于发行数字资产数量,即公式 details.amount[0] +details.amount[2] +... =  asset_amount</td></tr>
+						<tr><td>details.amount</td><td>数字资产数量</td></tr>
+						<tr><td>details.start</td><td>数字资产有效期起始时间,linux时间戳</td></tr>
+						<tr><td>details.length</td><td>数字资产有效期,（-1 未初始化,0 有效期为永久 ,大于0 有效期单位为秒 ）</td></tr>
+						<tr><td>details.ext</td><td>扩展字段[可选]</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="issueAssetBySyn4_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"asset_amount": 21300,
+		"asset_code": "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+		"asset_issuer": "bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+		"asset_name": "绿耳朵数字资产",
+		"asset_unit": "朵",
+		"bc_hash": "c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d"
+	},
+	"err_code": "0",
+	"msg": "操作成功"
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="issueAssetByASyn" class="con">
+			<h1>异步发行数字资产</h1>
+			<p class="intro">开发者可以通过该接口自行发行数字资产,MicIoE微物联网络区块链服务器接收到请求数据后会立即响应给开发者结果为”数字资产正在发行”（正在进行区块链数据交互）。交互结果不管成功还是失败,MicIoE微物联网络区块链服务器会主动通知开发者,具体见“MicIoE微物联网络区块链通知接口”。</p>
+
+			<section id="issueAssetByASyn5_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/issueAsync?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+					<p class="lh-20">
+</p><pre style="background: #dcdcdc;">{
+
+	"password":"asd123",
+	"trade_no":"1000009820141203513322",
+	"asset_issuer":"bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+	"asset_name":"绿耳朵数字资产",
+	"asset_unit":"朵",
+	"asset_amount":"21300",
+    "body":"test asset",
+	"metadata":"xxxxx"
+}</pre>
+					<p></p>
+				</div>
+			</section>
+
+			<section id="issueAssetByASyn5_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>password</td><td>账户密码</td></tr>
+						<tr><td>trade_no</td><td>第三方平台内部的订单号,如：2015121822992</td></tr>
+						<tr><td>asset_amount</td><td>发布数字资产数量。如 1250分（等价于12.5元）</td></tr>
+						<tr><td>asset_issuer</td><td>数字资产发行商的区块链地址</td></tr>
+						<tr><td>asset_name</td><td>数字资产名称（带中文,请用utf-8进行编码）</td></tr>
+						<tr><td>asset_unit</td><td>数字资产单位,请以计量单位最小单位.如 12.5元,就用分为作为单位</td></tr>					
+						<tr><td>body</td><td>说明（可选）</td></tr>
+						<tr><td>details</td><td>数字资产明细列表（可选）,若填写数字资产明细里的数字资产数量总和必须等于发行数字资产数量,即公式 details.amount[0] +details.amount[2] =  asset_amount</td></tr>
+						<tr><td>details.amount</td><td>数字资产数量</td></tr>
+						<tr><td>details.start</td><td>数字资产有效期起始时间,linux时间戳</td></tr>
+						<tr><td>details.length</td><td>数字资产有效期,（-1 未初始化,0 有效期为永久 ,大于0 有效期单位为秒 ）</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="issueAssetByASyn5_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"trade_no": "1000009820141203513322"
+	},
+	"err_code": "0",
+	"msg": "数字资产正在发行"
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="addAssetInfoBySyn" class="con">
+			<h1>同步追加发行数字资产</h1>
+			<p class="intro">开发者可以通过该接口自行追加发行数字资产。</p>
+			<p class="intro">当开发者追加发行带有效期的数字资产时,需要设置数字资产明细列表。具体见示例</p>
+			<section id="addAssetInfoBySyn6_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/add2Issue?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+<pre style="background: #dcdcdc;">{
+	"password":"asd123",
+	"trade_no":"1000009820141203513322",
+	"asset_code": "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+	"asset_amount":"21300",
+  	"metadata":"xxxxx"
+	}
+</pre>
+				</div>
+			</section>
+
+			<section id="addAssetInfoBySyn6_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>password</td><td>账户密码</td></tr>
+						<tr><td>trade_no</td><td>第三方平台内部的订单号,如：2015121822992</td></tr>
+						<tr><td>asset_amount</td><td>发行数字资产数量。如 1250分（等价于12.5元）</td></tr>
+						<tr><td>asset_code</td><td>待追加数字资产编码</td></tr>
+						<tr><td>details</td><td>数字资产明细列表（可选）,若填写数字资产明细里的数字资产数量总和必须等于发行数字资产数量,即公式 details.amount[0] +details.amount[2] +... =  asset_amount</td></tr>
+						<tr><td>details.amount</td><td>数字资产数量</td></tr>
+						<tr><td>details.start</td><td>数字资产有效期起始时间,linux时间戳</td></tr>
+						<tr><td>details.length</td><td>数字资产有效期,（-1 未初始化,0 有效期为永久 ,大于0 有效期单位为秒 ）</td></tr>
+						<tr><td>details.ext</td><td>扩展字段[可选]</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>						
+					</tbody></table>
+				</div>
+			</section>
+			<section id="addAssetInfoBySyn6_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"asset_amount": 21300,
+		"asset_code": "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+		"asset_issuer": "bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+		"asset_name": "绿耳朵数字资产",
+		"asset_unit": "朵",
+"bc_hash": "c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d"
+	},
+	"err_code": "0",
+	"msg": "操作成功"
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="addAssetInfoByASyn" class="con">
+			<h1>异步追加发行数字资产</h1>
+			<p class="intro">开发者可以通过该接口自行发行数字资产,MicIoE微物联网络区块链服务器接收到请求数据后会立即响应给开发者结果为”数字资产正在发行”（正在进行区块链数据交互）。交互结果不管成功还是失败,MicIoE微物联网络区块链服务器会主动通知开发者,具体见“MicIoE微物联网络区块链通知接口”。</p>
+			<section id="addAssetInfoByASyn7_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/add2IssueAsync?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+<pre style="background: #dcdcdc;">{
+	"password":"asd123",
+	"trade_no":"1000009820141203513322",
+	"asset_code": "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+	"asset_amount":"21300",
+	"metadata":"xxxxx"
+}</pre>
+				</div>
+			</section>
+
+			<section id="addAssetInfoByASyn7_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>password</td><td>账户密码</td></tr>
+						<tr><td>trade_no</td><td>第三方平台内部的订单号,如：2015121822992</td></tr>
+						<tr><td>asset_amount</td><td>发布数字资产数量。如 1250分（等价于12.5元）</td></tr>
+						<tr><td>asset_issuer</td><td>数字资产发行商的区块链地址</td></tr>
+						<tr><td>asset_code</td><td>待追加数字资产编码</td></tr>
+						<tr><td>details</td><td>数字资产明细列表（可选）,若填写数字资产明细里的数字资产数量总和必须等于发行数字资产数量,即公式 details.amount[0] +details.amount[2] =  asset_amount</td></tr>
+						<tr><td>details.amount</td><td>数字资产数量</td></tr>
+						<tr><td>details.start</td><td>数字资产有效期起始时间,linux时间戳</td></tr>
+						<tr><td>details.length</td><td>数字资产有效期,（-1 未初始化,0 有效期为永久 ,大于0 有效期单位为秒 ）</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>
+						
+					</tbody></table>
+				</div>
+			</section>
+			<section id="addAssetInfoByASyn7_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"trade_no": "1000009820141203513322"
+	},
+	"err_code": "0",
+	"msg": "数字资产正在追加发行"
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+
+</pre>
+				</div>
+			</section>
+		</div>
+		<div data-marker="transformAssetBySyn" class="con">
+			<h1>同步数字资产转移</h1>
+			<p class="intro">开发者可以通过本接口来完成数字资产的转移。</p>
+			<section id="transformAssetBySyn8_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/send?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+<pre style="background: #dcdcdc;">{
+	"trade_no" : "2015121822911",
+	"current_string" : "MqUq6TASQju57VcH",
+	"password" : "abcd100",
+	"asset_code" : "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+	"asset_amount" : "240",
+	"from_bubi_address" : "bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+	"to_bubi_address" : "bubiV8iG97JVp7V7XhdAQN4Be8jMxF3giphVeU27",
+	"metadata" : "xxxxx",
+	"sign" : "kfB53Q4aSJmDLyKguiP6mG5bee2XmtbTNQ2"
+}</pre>
+				</div>
+			</section>
+			<section id="transformAssetBySyn8_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>current_string</td><td>随机字符串,不长于32位</td></tr>
+						<tr><td>sign</td><td>交易签名,见签名算法,涉及到验签参数有current_string、trade_no、asset_code、asset_amount、from_bubi_address和to_bubi_address</td></tr>
+						<tr><td>password</td><td>数字资产转出方的账户密码</td></tr>
+						<tr><td>body</td><td>数字资产描述或交易摘要,不长于50位（可选项）</td></tr>
+						<tr><td>trade_no</td><td>开发者内部的凭据号,如：2015121822992</td></tr>
+						<tr><td>asset_unit</td><td>数字资产单位,带中文,请用utf-8进行url编码</td></tr>
+						<tr><td>asset_code</td><td>数字资产CODE,转出方给转入方转让的数字资产标识（全网唯一）</td></tr>
+						<tr><td>asset_amount</td><td>数字资产转移数量,参数不带小数点</td></tr>
+						<tr><td>from_bubi_address</td><td>数字资产转出方（该客户的区块链地址）</td></tr>
+						<tr><td>to_bubi_address</td><td>数字资产转入方（该客户的区块链地址）</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>			
+					</tbody></table>
+				</div>
+			</section>
+			<section id="transformAssetBySyn8_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"err_code":"0",
+	"msg":"数字资产转移成功",
+	"data":{
+		"trade_no":"2015121822911",
+"tran_date": "1458888418607",
+
+"bc_hash": "c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d"
+	}
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="transformAssetByASyn" class="con">
+			<h1>异步数字资产转移</h1>
+			<p class="intro">开发者可以通过本接口来完成数字资产的异步转移。MicIoE微物联网络区块链服务器接收到请求数据后会立即响应给开发者数字资产正在转移（正在进行区块链数据交互）。交互结果不管成功还是失败,MicIoE微物联网络区块链服务器会主动通知开发者,具体见“MicIoE微物联网络区块链通知接口”。</p>
+			<section id="transformAssetByASyn9_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：post</p>
+					<p class="lh-20">https://test.api.bubi.cn/asset/v1/sendAsync?access_token=ACCESS_TOKEN</p>
+					<p class="lh-20">post数据格式：json</p>
+					<p class="lh-20">post数据示例：</p>
+<pre style="background: #dcdcdc;">{
+	"current_string": "MqUq6TASQju57VcH",
+	"password": "abcd100",
+	"sign": "kfB53Q4aSJmDLyKguiP6mG5bee2XmtbTNQ2",
+	"trade_no": "2015121822911",
+	"asset_code": "7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+	"asset_amount": "10000",
+	"from_bubi_address": "bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",
+	"to_bubi_address": "bubiV8iG97JVp7V7XhdAQN4Be8jMxF3giphVeU27",
+	"metadata":"xxxxx"
+}</pre>
+				</div>
+			</section>
+			<section id="transformAssetByASyn9_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>current_string</td><td>随机字符串,不长于32位</td></tr>
+						<tr><td>sign</td><td>交易签名,见签名算法,涉及到验签参数有current_string、trade_no、asset_code、asset_amount、from_bubi_address和to_bubi_address</td></tr>
+						<tr><td>password</td><td>数字资产转出方的账户密码</td></tr>
+						<tr><td>body</td><td>数字资产描述或交易摘要,不长于50位（可选项）</td></tr>
+						<tr><td>trade_no</td><td>开发者内部的凭据号,如：2015121822992</td></tr>
+						<tr><td>asset_name</td><td>数字资产名称,带中文,请用utf-8进行url编码</td></tr>
+						<tr><td>asset_unit</td><td>数字资产单位,带中文,请用utf-8进行url编码</td></tr>
+						<tr><td>asset_code</td><td>数字资产CODE,转出方给转入方转让的数字资产标识（全网唯一）</td></tr>
+						<tr><td>asset_amount</td><td>数字资产交易数量,参数不带小数点</td></tr>
+						<tr><td>from_bubi_address</td><td>数字资产转出方（该客户的区块链地址）</td></tr>
+						<tr><td>to_bubi_address</td><td>数字资产转入方（该客户的区块链地址）</td></tr>
+						<tr><td>metadata</td><td>扩展字段[可选]</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="transformAssetByASyn9_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"trade_no": "2015121822911"
+	},
+	"err_code": "0",
+	"msg": "数字资产正在转移"
+}
+
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="getAccountInfo" class="con">
+			<h1>获取账户信息</h1>
+			<p class="intro">开发者可以通过本接口来获取开发者的用户的账户信息。</p>
+
+			<section id="getAccountInfo10_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">https://test.api.bubi.cn/account/v1/info?bubi_address=bubiV8hyiVJUfp778o5h9MzAKPoLiGpgQ3FoMUDj&amp;access_token=ACCESS_TOKEN</p>
+				</div>
+			</section>
+			
+			<section id="getAccountInfo10_2" class="">
+				<h2>参数说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>bubi_address</td><td>用户唯一bubi_address</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+
+			<section id="getAccountInfo10_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"assets": [{
+			"amount": 23,
+			"code": "7R3DPR6j5Xe3WviYGZhbTAugvqW5f6UyBULkTG8afZTVogbqkjQSZmGQ7BH8WdPRs5gWuB2nQZ6rCx3xQhM4CZrwJvvEovgGkBry",
+			"details": [{
+				"amount": 23,
+				"ext": "",
+				"length": -1,
+				"start": 1452941880
+			}]
+		},
+		{
+			"amount": 50,
+			"code": "7R3DPR6j5Xe3WviYGZhbTAugvqW5f6UyBULkTG8afZTVogbqkjQSZmGQ7rpM4Rnb9FFrKgvxS5CcbSrhSbw2ErWxp9eF8SSGTGpP",
+			"details": [{
+				"amount": 10,
+				"ext": "",
+				"length": 3600,
+				"start": 1452941880
+			},
+			{
+				"amount": 10,
+				"ext": "",
+				"length": 36001,
+				"start": 1452941880
+			},
+			{
+				"amount": 30,
+				"ext": "",
+				"length": -1,
+				"start": 1452941880
+			}]
+		},
+		{
+			"amount": 44,
+			"code": "7R3DPR6j5Xe3WviYGZhbTAugvqW5f6UyBULkTG8afZTVogbqkjQSZmGQ7ji4JSFoKuEWFWGQkDqDkhH821wkYm9dt8GHVg34C3Aj",
+			"details": [{
+				"amount": 10,
+				"ext": "",
+				"length": 3600,
+				"start": 1452941880
+			},
+			{
+				"amount": 10,
+				"ext": "",
+				"length": 36001,
+				"start": 1452941880
+			},
+			{
+				"amount": 24,
+				"ext": "",
+				"length": -1,
+				"start": 1452941880
+			}]
+		},
+		{
+			"amount": 45,
+			"code": "7R3DPR6j5Xe3WviYGZhbTAugvqW5f6UyBULkTG8afZTVogbqkjQSZmGQ7ji4JSFoKuEWFWGQkDqDkhH821wkYm9dt8GHVg34C3Aj",
+			"details": [{
+				"amount": 10,
+				"ext": "",
+				"length": 3600,
+				"start": 1452941880
+			},
+			{
+				"amount": 10,
+				"ext": "",
+				"length": 36001,
+				"start": 1452941880
+			},
+			{
+				"amount": 25,
+				"ext": "",
+				"length": -1,
+				"start": 1452941880
+			}]
+		},
+		{
+			"amount": 20,
+			"code": "7R3DPR6j5Xe3WviYGZhbTAugvqW5f6UyBULkTG8afZTVogbqkjQSZmGQ7f64y5GpEkaNhavVCPqUaZEXT6pWxrgvcsXwqfgnLoZ5",
+			"details": [{
+				"amount": 10,
+				"ext": "",
+				"length": 3600,
+				"start": 1452941880
+			},
+			{
+				"amount": 10,
+				"ext": "",
+				"length": 36001,
+				"start": 1452941880
+			}]
+		}],
+		"bubi_address": "bubiV8hyiVJUfp778o5h9MzAKPoLiGpgQ3FoMUDj",
+"last_close_time":1453531750
+	},
+	"err_code": "0",
+	"msg": "操作成功"
+}
+失败：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+</pre>
+				</div>
+			</section>
+
+			<section id="getAccountInfo10_4" class="">
+				<h2>服务器响应主要参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>data.assets.amount</td><td>当前拥有数字资产数量</td></tr>
+						<tr><td>data.assets.code</td><td>数字资产code,即所拥有的数字资产</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="getTransactionInfo" class="con">
+			<h1>获取交易信息</h1>
+			<p class="intro">开发者可以通过本接口来获取开发者的用户的交易信息。</p>
+			<section id="getTransactionInfo11_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">https://test.api.bubi.cn/account/v1/transaction?bubi_address=bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt&amp;access_token=ACCESS_TOKEN</p>
+				</div>
+			</section>
+			<section id="getTransactionInfo11_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>bubi_address</td><td>用户唯一bubi_address</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="getTransactionInfo11_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">成功：
+{
+	"data": {
+		"transactions": [{
+			"operations": [{
+				"asset_amount": 100,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLEDhYboogkoCytqHAJkhNowEzL4RcE55mGnavseecq4C",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"type": 2
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"asset_amount": 21300,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYHGPbCapD8CHWG34mi9DGbBM5eb6MGd63EhYoAdp1bS25",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"type": 2
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"asset_amount": 2,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"dest_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"type": 1
+			}],
+			"source_address": "bubiV8hxgMwwnRWpEVhLL5dgEemk2kzox6ym7wHy"
+		},
+		{
+			"operations": [{
+				"asset_amount": 50,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"dest_address": "bubiV8hxgMwwnRWpEVhLL5dgEemk2kzox6ym7wHy",
+				"type": 1
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"asset_amount": 2,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"dest_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"type": 1
+			}],
+			"source_address": "bubiV8hxgMwwnRWpEVhLL5dgEemk2kzox6ym7wHy"
+		},
+		{
+			"operations": [{
+				"asset_amount": 100,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLALUECFJLPpdwqJyLR1q9FrdBXiCASrTNDdiN5tsWe1i",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"type": 2
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"asset_amount": 2,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"dest_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"type": 1
+			}],
+			"source_address": "bubiV8hxgMwwnRWpEVhLL5dgEemk2kzox6ym7wHy"
+		},
+		{
+			"operations": [{
+				"asset_amount": 100,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"type": 2
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"dest_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"type": 0
+			}],
+			"source_address": "bubiV8htfYzN1kaou67Sahzx65fYdSXwgYCtuFaP"
+		},
+		{
+			"operations": [{
+				"asset_amount": 2,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYLNmhhJ3D133GX87zcUVkPn66QRe925dB5h7bs1Ac3dmG",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"dest_address": "bubiV8hxgMwwnRWpEVhLL5dgEemk2kzox6ym7wHy",
+				"type": 1
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		},
+		{
+			"operations": [{
+				"asset_amount": 1200,
+				"asset_code": "7R3DPR6j5XdGghEbK8d8vScvw4MHjfKb4rGHVUFwf3h3SVD2iYVyfmzYH8iLAZYMUS12MoYcvwVpxErzC15rAs2sAHUU296ra5Hr",
+				"asset_issuer": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt",
+				"asset_type": 1,
+				"type": 2
+			}],
+			"source_address": "bubiV8hwmNvQ7M4VsQ7FMNM1WGiQv7RTA4GDzQbt"
+		}]
+	},
+	"err_code": "0",
+	"msg": "操作成功"
+}
+</pre>
+				</div>
+			</section>
+
+			<section id="getTransactionInfo11_4" class="">
+				<h2>服务器响应主要参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>data.transactions.operations.dest_address</td><td>数字资产流动目标地址</td></tr>
+						<tr><td>data.transactions.operations.type</td><td>操作类型：0 创建用户 1 数字资产转移 2 发行数字资产 5 数字资产发放</td></tr>
+						<tr><td>data.transactions.source_address</td><td>数字资产流动源地址</td></tr>
+						<tr><td>data.transactions.operations.amount</td><td>数字资产交易数量</td></tr>
+						<tr><td>Data.transactions.operations.property.code</td><td>数字资产code,交易的数字资产</td></tr>
+						<tr><td>Data.transactions.operations.property.issuer</td><td>数字资产的发行商区块链地址</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+		</div>
+
+		<div data-marker="notice" class="con">
+			<h1>MicIoE微物联网络区块链通知接口</h1>
+			<p class="intro">当开发者调用MicIoE微物联网络区块链提供的数字资产发行、数字资产发放、数字资产转移异步接口后,不管最终成功或失败,MicIoE微物联网络区块链都会向开发者发出通知,告知执行结果。开发者收到通知后,请以通知类型（notice_type）区分各自业务逻辑的处理。无论接收到的结果如何,只要开发者收到该请求,请返回ok字符串（不含其它字符,如双引号）,否则MicIoE微物联网络区块链将进行重复通知,直到开发者收到或者重复5次。</p>
+			<section id="notice12_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">数据示例：</p>
+					<p class="lh-20">异步数字资产发行：</p><p>
+					</p><p class="lh-20">asset_amount=10000&amp;asset_code=7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn&amp;asset_issuer=bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y¤t_string=MqUq6TASQju57VcH&amp;err_code=0&amp;msg=数字资产发行成功¬ify_type=0&amp;bc_hash=c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d&amp;issue_date=1458888418607&amp;sgin=b7086ab0a42a33de6093c545cfbb4aa0&amp;trade_no=201601141221</p>
+					<p class="lh-20">异步数字资产转移：</p><p>
+					</p><p class="lh-20">current_string=MqUq6TASQju57VcH&amp;err_code=0&amp;msg=数字资产转移成功¬ify_type=1&amp;bc_hash=c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d&amp;tran_date=1458888418607&amp;sgin=0adc527707990c71e5faf09b60f38dcf&amp;trade_no=201601141223</p>
+					<p class="lh-20">异步数字资产追加发行：</p><p>
+					</p><p class="lh-20">current_string=MqUq6TASQju57VcH&amp;err_code=0&amp;msg=数字资产追加发行成功¬ify_type=3&amp;bc_hash=c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d&amp;issue_date=1458888418607&amp;sgin=3552349bc445db3a9ed55bc1ae5c3eaf&amp;trade_no=201601141225</p>
+				</div>
+			</section>
+
+			<section id="notice12_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>notify_type</td><td>通知类型,0 数字资产发行 1 数字资产转移 3,数字资产追加发行</td></tr>
+						<tr><td>err_code</td><td>0 成功 非零具体见错误码 </td></tr>
+						<tr><td>sign</td><td>签名,见签名算法</td></tr>
+						<tr><td>msg</td><td>通知消息</td></tr>
+						<tr><td>bc_hash</td><td>区块链hash</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+
+			<section id="notice12_3" class="">
+				<h2>响应参数</h2>
+				<p class="lh-20">开发者服务器端收到通知并处理完成后,请返回纯文本的&nbsp;ok&nbsp;字符串,两边不带空格,忽略大小写,MicIoE微物联网络区块链在验证到响应为 ok 后会标记通知成功。</p>
+				<p class="lh-20">如果响应为非 ok 字符串,MicIoE微物联网络区块链会最多重试&nbsp;5&nbsp;次通知。 通知时间间隔为：15秒,30秒,1分钟,2分钟</p>
+			</section>
+		</div>
+
+		<div data-marker="selectAccountRegStatus" class="con">
+			<h1>查询账户注册状态</h1>
+			<p class="intro">MicIoE微物联网络区块链提供账户注册状态查询功能,以便开发者在不确定账户注册执行状态的情况下,通过主动查询来确认账户注册的状态。</p>
+			<section id="selectAccountRegStatus13_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">https://test.api.bubi.cn/status/account/v1/register?trade_no=1000009820141203515766&amp;access_token=ACCESS_TOKEN</p>
+				</div>
+			</section>
+			<section id="selectAccountRegStatus13_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>trade_no</td><td>凭据号：开发者需要保证其唯一</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="selectAccountRegStatus13_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">{
+	"err_code":"0",
+	"msg":"成功",
+	"data":
+	{
+		"bubi_address":"bubiV8hwYmkBgcQjeEqus685iZeACmHm6R9GBBVo"
+	}
+}
+或：
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+或：
+{
+	"err_code":"20009",
+	"msg":"处理中"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+
+		<div data-marker="selectAssetIssueStatus" class="con">
+			<h1>查询数字资产发行状态</h1>
+			<p class="intro">MicIoE微物联网络区块链提供数字资产发行状态查询功能,以便开发者在不确定数字资产发行执行状态的情况下,通过主动查询来确认数字资产发行的状态。</p>
+			<section id="selectAssetIssueStatus14_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">https://test.api.bubi.cn/status/asset/v1/issue?trade_no=1000009820141203515766&amp;access_token=ACCESS_TOKEN</p>
+				</div>
+			</section>
+			<section id="selectAssetIssueStatus14_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>trade_no</td><td>凭据号：开发者需要保证其唯一</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="selectAssetIssueStatus14_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">{
+	"err_code":"0",
+	"msg":"数字资产发行成功",
+	"data":
+	{
+		"asset_name":"MicIoE微物联网络区块链股权第一期",
+		"asset_issuer":"bubiV8iAvbAN319uVJPm2qrxdJNgXSdFSiyQoQ4Y",		"asset_code":"7R3DPR6j5YyxrcXa7QsUJckNDeMyR26MtZVnbN6d4kCkfNejKczfT4j8adeJThRLcbBxPbGVuY5RNKqWSBcUFATW7smWuZzRfDUn",
+		"asset_unit":"股",
+		"asset_amount":10000,
+"issue_date": "1458888418607",
+"bc_hash":"c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d"
+	}
+}
+或
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+或
+{
+	"err_code":"20009",
+	"msg":"处理中"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+
+		<div data-marker="selectAssetTransformStatus" class="con">
+			<h1>查询数字资产转移状态</h1>
+			<p class="intro">MicIoE微物联网络区块链提供数字资产转移状态查询功能,以便开发者在不确定数字资产转移执行状态的情况下,通过主动查询来确认数字资产转移的状态。</p>
+			<section id="selectAssetTransformStatus15_1" class="">
+				<h2 class="explain">接口请求说明</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-20">http请求方式：get</p>
+					<p class="lh-20">https://test.api.bubi.cn/status/asset/v1/send?trade_no=1000009820141203515766&amp;access_token=ACCESS_TOKEN</p>
+				</div>
+			</section>
+			<section id="selectAssetTransformStatus15_2" class="">
+				<h2>参数说明</h2>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>access_token</td><td>调用接口凭证</td></tr>
+						<tr><td>trade_no</td><td>凭据号：开发者需要保证其唯一</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+			<section id="selectAssetTransformStatus15_3" class="">
+				<h2>服务器响应</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+<pre style="background: #dcdcdc;">{
+	"err_code":"0",
+	"msg":"数字资产转移成功",
+	"data":{
+		"trade_no":"1000009820141203515766",
+"tran_date": "1458888418607",
+"bc_hash":"c44c595ce0a77d6a1f22a942ac397cc1cdc1edd654be56286a66af8364713b7d"
+
+	}
+}
+或
+{
+	"err_code":"20000",
+	"msg":"AccessToken 已过期"
+}
+或
+{
+	"err_code":"20009",
+	"msg":"处理中"
+}
+</pre>
+				</div>
+			</section>
+		</div>
+
+
+		<div data-marker="errorCode" class="con">
+			<h1>错误码</h1>
+			<section>
+				<div>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">参数</th><th>说明</th></tr>
+						<tr><td>10000</td><td>系统异常</td></tr>
+						<tr><td>20000</td><td>AccessToken 已过期</td></tr>
+						<tr><td>20001</td><td>开发者回调uri地址为空</td></tr>
+						<tr><td>20002</td><td>开发者ID授权存在异常</td></tr>
+						<tr><td>20003</td><td>开发者ID 不存在</td></tr>
+						<tr><td>20004</td><td>请求参数非法</td></tr>
+						<tr><td>20005</td><td>参数格式非法</td></tr>
+						<tr><td>20006</td><td>解析参数出现异常</td></tr>
+						<tr><td>20007</td><td>签名不能为空</td></tr>
+						<tr><td>20008</td><td>应用不存在或已下架</td></tr>
+						<tr><td>20009</td><td>处理中</td></tr>
+						<tr><td>20010</td><td>AppId不存在或已删除</td></tr>
+						<tr><td>20011</td><td>应用未授权</td></tr>
+						<tr><td>20012</td><td>应用权限被锁定</td></tr>
+						<tr><td>20013</td><td>AppKey不存在或已删除</td></tr>
+						<tr><td>20014</td><td>appID和appKey不匹配</td></tr>
+						<tr><td>20015</td><td>授权码不存在或已过期</td></tr>
+						<tr><td>20016</td><td>请求参数非法,数字资产发行凭据号不能为空</td></tr>
+						<tr><td>20017</td><td>操作异常,原因可能是重复提交</td></tr>
+						<tr><td>20018</td><td>授权码长度必须是%d</td></tr>
+						<tr><td>20019</td><td>MicIoE微物联网络区块链ID长度必须是%d</td></tr>
+						<tr><td>20020</td><td>回调地址长度不能大于%d</td></tr>
+						<tr><td>20021</td><td>凭据号长度不能大于%d</td></tr>
+						<tr><td>21100</td><td>请输入用户名</td></tr>
+						<tr><td>21101</td><td>请输入MicIoE微物联网络区块链账户密码</td></tr>
+						<tr><td>21102</td><td>用户名不存在</td></tr>
+						<tr><td>21103</td><td>用户名与密码不匹配</td></tr>
+						<tr><td>21104</td><td>用户名长度不能大于%d</td></tr>
+						<tr><td>21105</td><td>密码长度不能大于%d</td></tr>
+						<tr><td>21106</td><td>账号凭据号已存在</td></tr>
+						<tr><td>21107</td><td>账号凭据号为空</td></tr>
+						<tr><td>21108</td><td>支付密码长度必须是%d</td></tr>
+						<tr><td>21109</td><td>账号凭据号不存在</td></tr>
+						<tr><td>21110</td><td>写入区块链失败</td></tr>
+						<tr><td>21200</td><td>数字资产发行凭据号不能为空</td></tr>
+						<tr><td>21201</td><td>发行商MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21202</td><td>数字资产名称不能为空</td></tr>
+						<tr><td>21203</td><td>数字资产单位不能为空</td></tr>
+						<tr><td>21204</td><td>数字资产发行数量不能为空</td></tr>
+						<tr><td>21205</td><td>数字资产发行数量必须是整数</td></tr>
+						<tr><td>21206</td><td>数字资产发行商MicIoE微物联网络区块链ID不存在</td></tr>
+						<tr><td>21207</td><td>数字资产发行凭据号已被使用</td></tr>
+						<tr><td>21208</td><td>数字资产凭据号长度不能大于%d</td></tr>
+						<tr><td>21209</td><td>数字资产发行商MicIoE微物联网络区块链ID长度必须是%d</td></tr>
+						<tr><td>21210</td><td>数字资产名称长度不能大于%d</td></tr>
+						<tr><td>21211</td><td>数字资产单位长度不能大于%d</td></tr>
+						<tr><td>21212</td><td>数字资产数量长度不能大于%d</td></tr>
+						<tr><td>21213</td><td>数字资产数量不能大于%d</td></tr>
+						<tr><td>21214</td><td>数字资产代码长度必须是%d</td></tr>
+						<tr><td>21215</td><td>数字资产代码格式错误</td></tr>
+						<tr><td>21216</td><td>数字资产凭据号不存在</td></tr>
+						<tr><td>21217</td><td>数字资产发布失败</td></tr>
+						<tr><td>21300</td><td>随机字符串不能为空</td></tr>
+						<tr><td>21301</td><td>随机字符串长度不能大于%d</td></tr>
+						<tr><td>21302</td><td>数字资产描述或交易摘要不能不长于%d</td></tr>
+						<tr><td>21303</td><td>数字资产转移凭据号不能为空</td></tr>
+						<tr><td>21304</td><td>数字资产名称不能为空</td></tr>
+						<tr><td>21305</td><td>数字资产单位不能为空</td></tr>
+						<tr><td>21306</td><td>数字资产代码不能为空</td></tr>
+						<tr><td>21307</td><td>数字资产转移数量不能为空</td></tr>
+						<tr><td>21308</td><td>数字资产转出方MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21309</td><td>数字资产转入方MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21310</td><td>数字资产转移签名验证失败</td></tr>
+						<tr><td>21311</td><td>数字资产转出方不存在</td></tr>
+						<tr><td>21312</td><td>数字资产转出方账户出现异常</td></tr>
+						<tr><td>21313</td><td>数字资产转入方不存在</td></tr>
+						<tr><td>21314</td><td>数字资产转入方账户出现异常</td></tr>
+						<tr><td>21315</td><td>待转移数字资产不存在</td></tr>
+						<tr><td>21316</td><td>待数字资产转移数量必须是整数</td></tr>
+						<tr><td>21317</td><td>数字资产转出方MicIoE微物联网络区块链ID长度必须是%d</td></tr>
+						<tr><td>21318</td><td>数字资产转入方MicIoE微物联网络区块链ID长度必须是%d</td></tr>
+						<tr><td>21319</td><td>签名长度必须是%d</td></tr>
+						<tr><td>21320</td><td>数字资产转移凭据号已存在</td></tr>
+						<tr><td>21321</td><td>数字资产转移凭据号不存在</td></tr>
+						<tr><td>21322</td><td>数字资产转移失败</td></tr>
+						<tr><td>21400</td><td>请输入用户名</td></tr>
+						<tr><td>21401</td><td>请设置账户密码</td></tr>
+						<tr><td>21402</td><td>请设置支付密码</td></tr>
+						<tr><td>21403</td><td>用户名已存在</td></tr>
+						<tr><td>21404</td><td>开发者ID存在异常</td></tr>
+						<tr><td>21405</td><td>用户名长度最少2个字符,最多2个字符</td></tr>
+						<tr><td>21406</td><td>账户密码长度最少8个字符,最多25个字符</td></tr>
+						<tr><td>21407</td><td>账户密码只能由数字+字母组成（存在其他字符）</td></tr>
+						<tr><td>21408</td><td>账户密码需由数字+字母组成（全数字或全字母）</td></tr>
+						<tr><td>21409</td><td>支付密码长度只能是6位</td></tr>
+						<tr><td>21500</td><td>请输入账户支付密码</td></tr>
+						<tr><td>21501</td><td>支付密码错误</td></tr>
+						<tr><td>21502</td><td>发行数字资产数量不能大于%d</td></tr>
+						<tr><td>21600</td><td>获取账户信息MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21601</td><td>账户信息不存在</td></tr>
+						<tr><td>21700</td><td>数字资产发行凭据号不能为空</td></tr>
+						<tr><td>21701</td><td>数字资产转出方账户密码不能为空</td></tr>
+						<tr><td>21702</td><td>数字资产发行方不能为空</td></tr>
+						<tr><td>21703</td><td>数字资产名称不能为空</td></tr>
+						<tr><td>21704</td><td>数字资产单位不能为空</td></tr>
+						<tr><td>21705</td><td>待数字资产转移数量必须是正整数</td></tr>
+						<tr><td>21707</td><td>数字资产转出者MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21708</td><td>发行者账户密码验证失败,账户及密码不匹配</td></tr>
+						<tr><td>21709</td><td>此接口只针对安全级别低的账户开放</td></tr>
+						<tr><td>21710</td><td>此接口只针对安全级别高的账户开放</td></tr>
+						<tr><td>21800</td><td>数字资产转移签名所需随机字符串不能为空</td></tr>
+						<tr><td>21801</td><td>数字资产转移签名所需随机字符串长度不能大于%d</td></tr>
+						<tr><td>21802</td><td>数字资产转出方账户密码不能为空</td></tr>
+						<tr><td>21803</td><td>数字资产描述或摘要长度不能大于%d</td></tr>
+						<tr><td>21804</td><td>数字资产转移凭据号不能为空</td></tr>
+						<tr><td>21805</td><td>待转移数字资产名称不能为空</td></tr>
+						<tr><td>21806</td><td>待转移数字资产单位不能为空</td></tr>
+						<tr><td>21807</td><td>待转移数字资产代码不能为空</td></tr>
+						<tr><td>21808</td><td>待转移数字资产数量不能为空</td></tr>
+						<tr><td>21809</td><td>待转移数字资产数量必须是正整数</td></tr>
+						<tr><td>21810</td><td>待数字资产转出方MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21811</td><td>待数字资产转入方MicIoE微物联网络区块链ID不能为空</td></tr>
+						<tr><td>21812</td><td>待转移数字资产sign不能为空</td></tr>
+						<tr><td>21813</td><td>开发者ID出现异常</td></tr>
+						<tr><td>21814</td><td>待转移数字资产签名验证失败</td></tr>
+						<tr><td>21815</td><td>数字资产转出方账户出现异常</td></tr>
+						<tr><td>21816</td><td>转出方必须通过手动输入支付密码进行确认数字资产转移</td></tr>
+						<tr><td>21817</td><td>数字资产转出方账户与密码不匹配</td></tr>
+						<tr><td>21818</td><td>数字资产转入方账户不存在</td></tr>
+						<tr><td>21819</td><td>数字资产转入方账户出现异常</td></tr>
+						<tr><td>21820</td><td>待转移数字资产不存在</td></tr>
+					</tbody></table>
+				</div>
+			</section>
+		</div>
+
+
+		<div data-marker="signAlgorithm" class="con signAlgorithm">
+			<h1>签名算法</h1>
+			<p class="intro">签名生成的通用步骤如下：</p>
+			<ul class="sub-ul">
+				<li class="sub-li">a.将涉及到的数据,按照参数名ASCII码从小到大排序（字典序）,使用URL键值对的格式（即key1=value1&amp;key2=value2…）拼接成字符串stringA。
+					<strong>特别注意一下重要规则：</strong>
+					<ul class="sub-ul-sub">
+						<li>参数名ASCII码从小到大排序（字典序）； </li>
+						<li>如果参数的值为空不参与签名；</li>
+						<li>参数名区分大小写；</li>
+						<li>验证调用返回或MicIoE微物联网络区块链主动通知签名时,传送的sign参数不参与签名,将生成的签名与该sign值作校验。</li>
+					</ul>
+				</li>
+				<li class="intro">在stringA最后拼接上key得到tempSignStr字符串,并对tempSignStr进行MD5运算,再将得到的字符串所有字符转换为小写,得到sign值signValue。</li>
+				<li class="intro">Key值为开发者的appKey</li>
+			</ul>
+			<section id="signAlgorithm17_1" class="signAlgorithm11_1">
+				<h2 class="explain">数字资产转移示例：</h2>
+				<div class="bgcolor-f9f9f9 p-10">
+					<p class="lh-28">数字资产转移传送的参数如下：</p>
+					<table class="table table-bordered">
+						<tbody><tr><th width="200">键</th><th>值</th></tr>
+						<tr><td>current_string</td><td>MqUq6TASQju57VcH</td></tr>
+						<tr><td>trade_no</td><td>2015121822911</td></tr>
+						<tr><td>asset_code</td><td>a811d986d4a60535bbee2af87d3b9772</td></tr>
+						<tr><td>asset_amount</td><td>10000</td></tr>
+						<tr><td>from_bubi_address</td><td>bubiV8hyQKo56DSqJmXVQXHXmtbTNQWRnAy4ZwSZ</td></tr>
+						<tr><td>to_bubi_address</td><td>bubiV8hxkfB53Q4aSJmDLyKguiP6mG5NrPQhTxF7</td></tr>
+					</tbody></table>
+					<ul>
+						<li>
+							<h5>第一步,对参数按照key=value的格式,并按照参数名ASCII字典序排序如下： </h5>
+							<p>stringA=”asset_amount=10000&amp;asset_code=a811d986d4a60535bbee2af87d3b9772¤t_string=MqUq6TASQju57VcH&amp;from_bubi_address=bubiV8hyQKo56DSqJmXVQXHXmtbTNQWRnAy4ZwSZ&amp;to_bubi_address=bubiV8hxkfB53Q4aSJmDLyKguiP6mG5NrPQhTxF7&amp;trade_no=2015121822911”;</p>
+						</li>
+						<li>
+							<h5>第二步,拼接appKey</h5>
+							<p class="lh-20">tempSignStr = “stringA&amp;key=73869d83e9b3fac6ec3b37c3b2ec5f15”</p>
+							<p class="lh-20">sign = MD5(tempSignStr ).toLowerCase();</p>
+						</li>
+						<li>
+							<h5>最终得到的数据是：</h5>
+							<p class="lh-20">asset_amount=10000&amp;asset_code=a811d986d4a60535bbee2af87d3b9772¤t_string=MqUq6TASQju57VcH&amp;from_bubi_address=bubiV8hyQKo56DSqJmXVQXHXmtbTNQWRnAy4ZwSZ&amp;to_bubi_address=bubiV8hxkfB53Q4aSJmDLyKguiP6mG5NrPQhTxF7&amp;trade_no=2015121822911&amp;<span class="attention">sign=3c0f30b6175edf3c972f189da1fd6926</span></p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+	</div>
+
+	
+	
+	
+
+
+
+<!-- 公共底部 -->
+	
+	<!-- 底部 -->
+	<div class="bm-footer pr">
+		<img src="//img.alicdn.com/imgextra/i4/1105832541/TB27Ka5XNjxQeBjy1zbXXbqApXa_!!1105832541.png" alt="" />
+		<div class="bm-wrap pr">
+			<ul class="about clearfix">
+				<li class="column first">
+					<h2>友情链接</h2>
+					<a href="http://www.micioe.net/" target="_blank">MicIoE区块</a>
+					<a href="http://www.dodochain.com/" target="_blank">多多币</a>
+					<a href="https://www.btc123.com/" target="_blank">Btc123</a>
+					<a href="http://www.shitourom.com/" target="_blank">石头ROM</a>
+					<a href="http://www.qianxiangbank.com/" target="_blank">钱香金融</a><a href="http://micioe.com/main/www.micioe.com" target="_blank">微物联硬件</a>
+				</li>
+
+				<li class="column second">
+					<h2>开发者支持</h2>
+					<a href="noviciate.html" target="_blank">新手上路</a>
+					<a href="API.html" target="_blank">API 文档</a>
+					<a href="SDK.html" target="_blank">SDK 下载</a>
+				</li>
+
+				<li class="column third">
+					<h2>联系我们</h2>
+					<p>电话：950-4040-2754</p>
+					<p>QQ：504115485</p>
+					<p>邮箱：MicIoE@MicIoE.NET</p>
+				</li>
+			</ul>
+		</div>
+		<p class="copyright">MicIoE微物联网络区块链 | <a href="http://www.micioe.com" target="_blank"><font color=red>电信级物联网IoT邮箱</font></a> | 闽ICP备18010811号</p>
+	</div>
+	
+	<script type="text/javascript">var serverUrl = "http://www.bumeng.cn/"</script>
+	<script rel="stylesheet" src="../common/js/jquery.min.js"></script>
+	<!--[if lte IE 9]>
+		<script rel="stylesheet" src="http://www.bumeng.cn/common/js/PIE-1.0.0/PIE.js"></script>
+		<script rel="stylesheet" src="http://www.bumeng.cn/common/js/ie8-ie9.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="../common/plugins/niceValidator/jquery.validator.js"></script>
+	<script type="text/javascript" src="../common/js/b.core.js"></script>
+	<script type="text/javascript" src="../common/js/verifyCode.js"></script>
+	<script>
+		var _hmt = _hmt || [];
+		(function() {
+		var hm = document.createElement("script");
+		hm.src = "../../hm.baidu.com/hm870d.js?a3279404872688423f850391cd378673";
+		var s = document.getElementsByTagName("script")[0];
+		s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');ga('create', 'UA-105845586-1', 'auto');ga('send', 'pageview');</script></body>
+
+<!-- Mirrored from www.bumeng.cn/document/API by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Aug 2016 11:06:49 GMT -->
+</html>
+
