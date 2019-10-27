@@ -1,0 +1,141 @@
+@CHARSET "UTF-8";
+*{
+	padding: 0;
+	margin: 0;
+}
+/*html5标签*/
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section{
+    display: block;
+}
+html,body{
+	/*这段代码将确保你的HTML元素总是稍微高于浏览器滚动条所停留的位置。*/
+}
+body{
+	background-color: #FFF;
+    color: #323232;
+    font: 12px/1.5 Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma;
+	*font-family: Microsoft YaHei,Arial,Verdana,sans-serif,Segoe UI,Tahoma;
+}
+img,fieldset,button,input{
+	border: none;
+}
+a,input,button,select,textarea{
+	outline: none;
+}
+::-moz-focus-inner{
+	border: 0px;
+}
+em{
+	font-style: normal;
+}
+ul, dl, ol{
+    list-style: none outside none;
+}
+a:focus,button:focus,button:active{
+	outline: none;
+}
+a{
+	color: #323232;
+	text-decoration: none;
+	cursor: pointer;
+	background: transparent;	/* ie 下a标签触发时透明背景 */
+	bblr:expression(this.onFocus=this.blur());	/*消除A标签被选择后周围的虚线边框，IE使用*/
+}
+a:hover{
+	text-decoration: underline;
+	color: #428bca;
+}
+.clearfix:after, .wrap:after{
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix:before, .wrap:before{
+	content: "";
+	display: table;
+}
+/* IE 6/7 */
+.clearfix, .wrap{
+	zoom: 1;
+}
+.clear{
+	clear: both;
+}
+.main-wrap{
+	border: solid 1px #D5D5D5;
+	border-top: none;
+}
+.sosobtc-item table{
+	border-collapse: collapse;
+	width: 100%;
+}
+.sosobtc-item tr{
+	cursor: pointer;
+}
+.sosobtc-item tr:hover{
+	background-color: #F1F1F1;
+}
+.sosobtc-item .odd{
+	background-color: #FAFAFA;
+}
+.sosobtc-item td{
+	line-height: 24px;
+	padding: 0 5px;
+	border-top: solid 1px #D5D5D5;
+}
+.sosobtc-item .row-name{
+	padding-left: 10px;
+	width: 16%;
+}
+.sosobtc-item .row-price{
+	width: 19%;
+}
+.sosobtc-item .row-buy, .sosobtc-item .row-sell, .sosobtc-item .row-high,.sosobtc-item .row-low{
+}
+.sosobtc-item .text{
+	color: #428bca;
+}
+.ico-currency{
+	font-style: normal;
+}
+
+.price-ico {
+	display: inline-block;
+	width: 7px;
+	height: 8px;
+	vertical-align: middle;
+	background: url(/public/images/m-up-down.png) 0 9999px no-repeat transparent;
+	margin-top: -2px;
+}
+.data-up .price-ico{
+	background-position: 0 0;
+}
+.data-down .price-ico{
+	background-position: 0 -50px;
+}
+.data-up {
+	color: #65ac05;
+}
+.data-down {
+	color: #e40101;
+}
+.text-tip{
+	border-top: solid 1px #D5D5D5;
+	text-align: center;
+	line-height: 24px;
+	color: #878787;
+}
+.text-tip font{
+	color: #333;
+	font-weight: bold;
+}

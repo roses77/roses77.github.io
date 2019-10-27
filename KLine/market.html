@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<!-- saved from url=(0275)http://static2.sosobtc.com/plugin/market?btc=bitstamp%7Cbitfinex%7Chuobi%7Cokcoin%7Cchbtc%7Cokcoinfutures_week&ltc=bitfinex%7Chuobi%7Cokcoin%7Cchbtc&alt=ppc%7Cdoge%7Cpts&bter=doge&others=eth_bitfinex&short_tip=1&show_tip=1&td_height=&row=price%7Cbuy%7Csell%7Chigh%7Clow%7Cvol -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<title>实时行情列表插件 |  sosobtc-sosobtc是专业的比特币价格、行情、资讯平台</title>
+	<meta name="keywords" content="比特币,虚拟币,行情插件,插件市场,比特币插件,莱特币插件,山寨币插件,自定义插件,比特币行情,比特币价格,比特币K线">
+	<meta name="description" content="sosobtc官方提供的实时行情价格列表插件，各平台管理员可以自定义需要展示的币种行情列表，支持OKCoin/BTCC/火币网/BTC100/比特时代/比特儿等交易平台的比特币、莱特币、其他币价格行情，全面汇集最优质的比特币资源。 SosoBtc插件市场,比特币同行的首选。">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.sosobtc.com/">
+	<meta property="og:image" content="https://www.sosobtc.com/public/images/sosobtc-site-logo.png">
+	<meta property="og:site_name" content="sosobtc">
+	<meta property="og:description" content="sosobtc官方提供的实时行情价格列表插件，各平台管理员可以自定义需要展示的币种行情列表，支持OKCoin/BTCC/火币网/BTC100/比特时代/比特儿等交易平台的比特币、莱特币、其他币价格行情，全面汇集最优质的比特币资源。 SosoBtc插件市场,比特币同行的首选。">
+	<script src="push.js"></script><script async="" src="analytics.js"></script><script type="text/javascript">document.domain = 'sosobtc.com';
+// 没有后缀"/"结束，以方便更改端口
+var WWW_SERVER = 'http://www.sosobtc.com';
+var KLINE_SERVER = 'http://k.sosobtc.com';
+var IO_SERVER = 'http://io.sosobtc.com/'</script><script src="jquery.js"></script><link rel="stylesheet" href="market.css">
+
+	<script type="text/javascript">
+		var rowList = {"price":1,"buy":1,"sell":1,"high":1,"low":1,"vol":1};
+	</script>
+	<style type="text/css">
+		.sosobtc-item td{
+			height: ;
+			white-space: nowrap;
+		}
+		.sosobtc-item td.row-vol{
+			text-align: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-wrap">
+		<div class="sosobtc-btc sosobtc-item">
+		<table>
+						<tbody><tr data-id="bitstamp" data-type="btc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btc_bitstamp.html">Bitstamp</a></td>
+								<td class="row-price data-down" data-price="19315.37">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>126071.59</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>19038.87</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19289.92</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19315.37</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19666.00</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>18400.05</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">9420฿</span>
+				</td>
+							</tr>
+								<tr data-id="bitfinex" data-type="btc" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btc_bitfinex.html">Bitfinex</a></td>
+								<td class="row-price data-down" data-price="19439.0">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>127866.96</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>19310.0</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19439.0</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19442.0</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19891.0</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>18396.0</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">51391฿</span>
+				</td>
+							</tr>
+								<tr data-id="huobi" data-type="btc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btc_huobi.html">火币网</a></td>
+								<td class="row-price" data-price="40600.00">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>40600.00</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>6131.26</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40600.00</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40600.00</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">2179฿</span>
+				</td>
+							</tr>
+								<tr data-id="okcoin" data-type="btc" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btc_okcoin.html">OKCoin币行</a></td>
+								<td class="row-price" data-price="40303">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>40303</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>6086.41</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40102</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40303</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40303</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>40303</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">1฿</span>
+				</td>
+							</tr>
+								<tr data-id="cnbtc" data-type="btc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btc_cnbtc.html">中国比特币</a></td>
+								<td class="row-price" data-price="27197.00">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>27197.00</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>4107.19</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>27028.19</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>27776.9</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">0฿</span>
+				</td>
+							</tr>
+								<tr data-id="okcoinfutures" data-type="btcweek" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/btcweek_okcoinfutures.html">OKCoin合约[本周]</a></td>
+								<td class="row-price data-down" data-price="20539.72">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>134422.54</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>20300.00</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>20539.72</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>20545.16</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>21189.00</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>19300.00</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">40655฿</span>
+				</td>
+							</tr>
+											<tr data-id="bitfinex" data-type="ltc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/ltc_bitfinex.html">LTC / Bitfinex</a></td>
+								<td class="row-price data-down" data-price="318.0">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>2103.81</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>317.71</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>317.27</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>318.1</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>331.84</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>275.03</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">551512฿</span>
+				</td>
+							</tr>
+								<tr data-id="huobi" data-type="ltc" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/ltc_huobi.html">LTC / 火币网</a></td>
+								<td class="row-price" data-price="344.96">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>344.96</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>52.09</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>344.96</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>344.96</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">93607฿</span>
+				</td>
+							</tr>
+								<tr data-id="okcoin" data-type="ltc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/ltc_okcoin.html">LTC / OKCoin币行</a></td>
+								<td class="row-price" data-price="340">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>340</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>51.35</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>340</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>345</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>340</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>340</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">110฿</span>
+				</td>
+							</tr>
+								<tr data-id="cnbtc" data-type="ltc" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/ltc_cnbtc.html">LTC / 中国比特币</a></td>
+								<td class="row-price" data-price="334.10">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>334.10</font></span>
+					<span class="split">/</span>
+					<span class="last-usd"><i class="ico-currency ico-dollar">$</i><font>50.45</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>341.01</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>344.1</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>344.1</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>324.00</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">0฿</span>
+				</td>
+							</tr>
+											<tr data-id="btc38" data-type="ppc" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/ppc_btc38.html">PPC / 比特时代</a></td>
+								<td class="row-price" data-price="9.05">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>9.05</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>8.58</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>9.28</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>9.05</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>9</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">460฿</span>
+				</td>
+							</tr>
+								<tr data-id="btc38" data-type="doge" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/doge_btc38.html">DOGE / 比特时代</a></td>
+								<td class="row-price" data-price="0.00754">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>0.00754</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00742</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00766</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00754</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.0075</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">622540฿</span>
+				</td>
+							</tr>
+											<tr data-id="bter" data-type="doge" class="even" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/doge_bter.html">DOGE / 比特儿</a></td>
+								<td class="row-price" data-price="0.00588">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>0.00588</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.0057</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.0059</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00596</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">￥</i><font>0.00568</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">4685779฿</span>
+				</td>
+							</tr>
+											<tr data-id="bitfinex" data-type="eth" class="odd" data-hide="0">
+				<td class="row-name"><a target="_blank" href="http://k.sosobtc.com/eth_bitfinex.html">ETH / Bitfinex</a></td>
+								<td class="row-price data-down" data-price="708.84">
+					<span class="text">最新价</span>										<span class="last-cny"><i class="ico-currency ico-yuan">￥</i><font>4689.82</font></span>
+										<i class="price-ico"></i>
+				</td>
+												<td class="row-buy">
+					<span class="text">买一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>708.52</font></span>
+				</td>
+												<td class="row-sell">
+					<span class="text">卖一</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>708.54</font></span>
+				</td>
+												<td class="row-high">
+					<span class="text">最高</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>722.0</font></span>
+				</td>
+												<td class="row-low">
+					<span class="text">最低</span>					<span class="price"><i class="ico-currency ico-dollar">$</i><font>672.51</font></span>
+				</td>
+												<td class="row-vol">
+					<span class="text">量</span>					<span class="vol">193027฿</span>
+				</td>
+							</tr>
+										</tbody></table>
+	</div>
+	<div class="text-tip">更新于 <font>2</font> 秒前 | 技术支持：<a href="http://www.sosobtc.com/" target="_blank">sosobtc</a></div>
+	</div>
+	<script src="market.js"></script>	<div class="tongji">
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-40108551-3', 'sosobtc.com');
+		ga('send', 'pageview');
+	</script>
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F647b37ce6da3a3a7972f5b7edd332547' type='text/javascript' async%3E%3C/script%3E"));
+	</script><script src="h.js" type="text/javascript" async=""></script>
+	<script>
+		(function(){
+			var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?575c0987fdfb56fe21924c29d3a7d86c":"https://jspassport.ssl.qhimg.com/11.0.1.js?575c0987fdfb56fe21924c29d3a7d86c";
+			document.write('<script src="' + src + '" id="sozz"><\/script>');
+		})();
+	</script><script src="11.0.1.js" id="sozz"></script><script charset="utf-8" src="ab77b6ea7f3fbf79.js"></script>
+	<script>
+		(function(){
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			}
+			else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
+</div>
+</body></html>
