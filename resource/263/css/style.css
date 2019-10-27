@@ -1,0 +1,1017 @@
+html,body,div,ul,li,p,input,button,h1,h2,h3,h4,h5,dl,dt,dd{ margin: 0; padding: 0;}
+img {border: 0 none; vertical-align: middle;}
+a,input,select,textarea,button{font-size:24px;border:0 none;text-decoration:none; outline:none;}
+.fixed:after { clear:both; content:'.'; display:block; font-size:0; line-height:0; visibility:hidden; height:0; }
+.fixed { zoom:1; }
+h1,h2,h3,h4,h5{ font-weight:normal;}
+ul, li {
+    list-style-type: none;
+}
+html, body {
+	position: relative;
+	-webkit-text-size-adjust:none;
+	word-break:break-all;
+}
+body {
+	background: #fff;
+	font-family:Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 24px;
+	width:640px;
+	margin:0 auto;
+	color:#000;
+	overflow:hidden;
+}
+/**********************导航*************************/
+.nav{
+	position:fixed;
+	top:0;
+	width:640px;
+	left:50%;
+	margin-left:-320px;
+	height:80px;
+	background-color:#a40000;
+	z-index:100;
+	opacity:0;
+	transform:translate(0,-80px);
+	-webkit-transform:translate(0,-80px);
+}
+.nav.on{
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1s ease 0s;
+	-webkit-transition:all 1s ease 0s;
+	opacity:1;
+}
+.nav img{
+	position:absolute;
+	left:30px;
+	top:15px;
+}
+.nav_btn{
+	position:absolute;
+	right:28px;
+	top:0;
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2zl.DaxvzQeBjSZPfXXbWGFXa_!!1105832541.png) no-repeat scroll center center;
+	width:43px;
+	height:80px;
+}
+.nav_box{
+	width:640px;
+	height:100%;
+	position:fixed;
+	top:-100%;
+	left:50%;
+	margin-left:-320px;
+	background-color:#fff;
+	z-index:99;
+	opacity:0;
+	transition:all 1s ease 0s;
+	-webkit-transition:all 1s ease 0s;
+}
+.nav_box.on{
+	opacity:1;
+	top:80px;
+	transition:all 1s ease 0s;
+	-webkit-transition:all 1s ease 0s;
+}
+.nav_box .ul1{
+	overflow:hidden;
+}
+.nav_box .ul1 li{
+	height:110px;
+	line-height:110px;
+	color:#a40000;
+	border-bottom:1px solid #a40000;
+	padding:0 25px;
+}
+.nav_box .ul1 li .sp1{
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2OWcAaxvzQeBjSZFgXXcvfVXa_!!1105832541.png) no-repeat scroll center center;
+	display:inline-block;
+	width:70px;
+	height:110px;
+	float:left;
+}
+.nav_box .ul1 li .sp2{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2qsAAaunAQeBjSZFkXXaC5FXa_!!1105832541.png) no-repeat scroll center center;
+	display:inline-block;
+	width:70px;
+	height:110px;
+	float:left;
+}
+.nav_box .ul1 li div{
+	float:left;
+	margin-left:30px;
+}
+.nav_box_list{
+	background-color:#c00d0d;
+}
+.nav_box .ul2{
+	overflow:hidden;
+}
+.nav_box .ul2 li{
+	width:610px;
+	height:100px;
+	border-bottom:1px solid #fff;
+	text-align:center;
+	color:#fff;
+	line-height:100px;
+	padding-left:30px;
+}
+.nav_box .ul2 li div{
+	float:left;
+	margin-right:30px;
+}
+.nav_box .ul2 li .sp3{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB224oxapHzQeBjSZFpXXXm1XXa_!!1105832541.png) no-repeat scroll center center;
+	width:63px;
+	height:100px;
+	display:inline-block;
+}
+.nav_box .ul2 li .sp4{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB28EmqaGi5V1BjSsplXXaVYpXa_!!1105832541.png) no-repeat scroll center center;
+	width:63px;
+	height:100px;
+	display:inline-block;
+}
+.nav_box .ul2 li .sp5{
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2RFqraGi5V1BjSsplXXaVYpXa_!!1105832541.png) no-repeat scroll center center;
+	width:63px;
+	height:100px;
+	display:inline-block;
+}
+.ewm_box{
+	position:absolute;
+	left:0;
+	bottom:100px;
+	width:640px;
+	text-align:center;
+}
+.ewm_box p{
+	font-size:18px;
+	color:#727272;
+}
+.mask{
+	width: 100%; 
+	height: 100%; 
+	z-index:100; 
+	top: 0px; 
+	left: 0px;
+	position: absolute;
+}
+/********************首页****************************/
+.swiper-container {
+        width: 100%;
+        height: 100%;
+}
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+}
+.page1{
+	background: #f94140 url(//img.alicdn.com/imgextra/i2/1105832541/TB2rlqsaGi5V1BjSspeXXcWPFXa_!!1105832541.jpg) no-repeat scroll top center;
+	width:800px;
+	height:1008px;
+	position:relative;
+	left:-80px;
+}
+.next{
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2mUiraGi5V1Bjy1zdXXaRkVXa_!!1105832541.png) no-repeat  scroll center center;
+	width:32px;
+	height:23px;
+	margin-left:-16px;
+}
+.content{
+	position:absolute;
+	left:0;
+	bottom:130px;
+	width:800px;
+	color:#fff;
+	text-align:center;
+}
+.content h2{
+	font-style:oblique;
+	text-align:center;
+	padding:10px 0;
+	border-bottom:5px solid #fff;
+	display:inline-block;
+	font-weight:bold;
+}
+.content p.word2{
+	width:420px;
+	display:inline-block;
+	margin-top:20px;
+	font-size:22px;
+	text-align:left;
+}
+.page2{
+	background:#f5bb20 url(//img.alicdn.com/imgextra/i1/1105832541/TB2l.euaGm5V1BjSszhXXcMtXXa_!!1105832541.jpg) no-repeat scroll top center;
+	width:800px;
+	height:1008px;
+	position:relative;
+	left:-80px;
+}
+.up{
+	position:absolute;
+	bottom:20px;
+	left:50%;
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2JoeqaGi5V1BjSsphXXaEpXXa_!!1105832541.png) no-repeat  scroll center center;
+	width:32px;
+	height:23px;
+	margin-left:-16px;
+}
+.content1{
+	position:absolute;
+	left:50%;
+	margin-left:-235px;
+	bottom:35%;
+	width:470px;
+	color:#fff;
+	text-align:center;
+}
+.content1 h2{
+	font-style:oblique;
+	text-align:center;
+	padding:10px 0;
+	border-bottom:5px solid #fff;
+	display:block;
+	font-weight:bold;
+}
+.content1 p.word2{
+	width:470px;
+	display:inline-block;
+	margin-top:20px;
+	font-size:22px;
+	text-align:left;
+}
+.page2 .ul3{
+	overflow:hidden;
+	position:absolute;
+	bottom:15%;
+	left:50%;
+	margin-left:-280px;
+}
+.page2 .ul3 li{
+	float:left;
+	margin-left:15px;
+}
+.pic1{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB23eivaGm5V1BjSspoXXa8VXXa_!!1105832541.png) no-repeat scroll center center;
+	width:163px;
+	height:152px;
+	display:block;
+}
+.pic1.on{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2pNOqaGi5V1Bjy1zkXXcL4VXa_!!1105832541.png) no-repeat scroll center center;
+}
+.pic2{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2mlivaF15V1Bjy1XaXXaPqVXa_!!1105832541.png) no-repeat scroll center center;
+	width:163px;
+	height:152px;
+	display:block;
+}
+.pic2.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2Z6auaGe5V1BjSszeXXc3zXXa_!!1105832541.png) no-repeat scroll center center;
+}
+.pic3{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB28hCsaGm5V1BjSsziXXaZMpXa_!!1105832541.png) no-repeat scroll center center;
+	width:163px;
+	height:152px;
+	display:block;
+}
+.pic3.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2PLkAaxvzQeBjSZFEXXbYEpXa_!!1105832541.png) no-repeat scroll center center;
+}
+@keyframes round
+{
+    0% { 
+	      transform:rotate(0deg);
+	   }
+    100% { 
+	     transform:rotate(360deg);
+		 }
+}
+@-webkit-keyframes round{
+	0% { 
+		  -webkit-transform:rotate(0deg);
+	   }
+    100% { 
+		 -webkit-transform:rotate(360deg);
+		 }
+}
+.round{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2tgysaGi5V1BjSspfXXapiXXa_!!1105832541.png) no-repeat scroll center center;
+	width:450px;
+	height:450px;
+	position:absolute;
+	top:135px;
+	left:173px;
+	animation: round 10s linear infinite;
+	-webkit-animation: round 10s linear infinite;
+}
+.logo_box{
+	position:absolute;
+	right:340px;
+	top:425px;
+	z-index:3;
+}
+.logo1{
+	width:18px;
+	height:21px;
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2GlavaF55V1Bjy1XcXXXQjFXa_!!1105832541.png) no-repeat scroll 0 0;
+	position:absolute;
+	left:0;
+	top:0;
+	animation: run 1.5s steps(1) infinite 0s;
+	-webkit-animation: run 1.5s steps(1) infinite 0s;
+}
+@keyframes run{
+	 0% {
+      background-position:0 0;
+    }
+    25% {
+       background-position:0 -21px;
+    }
+    50% {
+       background-position:0 -42px;
+    }
+	75% {
+       background-position:0 -63px;
+    }
+	100% {
+       background-position:0 -84px;
+    }
+}
+@-webkit-keyframes run {    
+     0% {
+           background-position:0 0;
+    }
+    25% {
+       background-position:0 -21px;
+    }
+    50% {
+       background-position:0 -42px;
+    }
+	75% {
+       background-position:0 -63px;
+    }
+	100% {
+       background-position:0 -84px;
+    }
+
+}
+.logo2{
+	background:url(../images///img.alicdn.com/imgextra/i4/1105832541/TB2Nr_WaNvzQeBjSZFEXXbYEpXa_!!1105832541.png) no-repeat scroll center center;
+	width:35px;
+	height:31px;
+	position:absolute;
+	left:15px;
+	top:10px;
+}
+.inco_box{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2Cr7BapLzQeBjSZJiXXXesFXa_!!1105832541.png) no-repeat center center;
+	width:145px;
+	height:145px;
+	position:absolute;
+	top:180px;
+	left:50%;
+	margin-left:-72px;
+	opacity:0;
+}
+.page2.on .inco_box{
+	opacity:1;
+	transition:all 1s ease 0.1s;
+	-webkit-transition:all 1s ease 0.1s;
+}
+.inco_box img{
+	position:absolute;
+}
+.bottomleft{
+	top:115px;
+	left:0;
+	opacity:0;
+	transform:translate(80px,-80px);
+	-webkit-transform:translate(80px,-80px);
+}
+.bottomright{
+	top:115px;
+	left:125px;
+	opacity:0;
+	transform:translate(-80px,-80px);
+	-webkit-transform:translate(-80px,-80px);
+}
+.topleft{
+	top:12px;
+	left:0;
+	opacity:0;
+	transform:translate(80px,80px);
+	-webkit-transform:translate(80px,80px);
+}
+.topright{
+	top:10px;
+	left:125px;
+	opacity:0;
+	transform:translate(-80px,80px);
+	-webkit-transform:translate(-80px,80px);
+}
+.page2.on .bottomleft,.page2.on .bottomright,.page2.on .topleft,.page2.on .topright{
+	opacity:1;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1s ease 0.4s;
+	-webkit-transition:all 1s ease 0.4s;
+}
+.inco13{
+	top:-15px;
+	left:60px;
+	opacity:0;
+}
+.page2.on .inco13{
+	opacity:1;
+	transition:all 1s ease 1.3s;
+	-webkit-transition:all 1s ease 1.3s;
+}
+.inco14{
+	top:40px;
+	left:130px;
+	opacity:0;
+}
+.page2.on .inco14{
+	opacity:1;
+	transition:all 1s ease 1.6s;
+	-webkit-transition:all 1s ease 1.6s;
+}
+.inco15{
+	top:80px;
+	left:135px;
+	opacity:0;
+}
+.page2.on .inco15{
+	opacity:1;
+	transition:all 1s ease 1.9s;
+	-webkit-transition:all 1s ease 1.9s;
+}
+.inco16{
+	top:80px;
+	left:-10px;
+	opacity:0;
+}
+.page2.on .inco16{
+	opacity:1;
+	transition:all 1s ease 1s;
+	-webkit-transition:all 1s ease 1s;
+}
+.ss1{
+	background-color:#f94140;
+}
+.ss2{
+	background-color:#f5bb20;
+}
+/***************************了解263***************************/
+.swp .swiper-slide{
+	/* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+}
+.return_btn{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2r_5yaF15V1Bjy1XbXXaNcVXa_!!1105832541.jpg) no-repeat scroll center center;
+	width:87px;
+	height:87px;
+	position:fixed;
+	bottom:0;
+	right:0;
+	z-index:99;
+}
+.page3,.page4 p,.p5_con{
+	width:430px;
+	margin:0 auto;
+}
+.page3 p,.page4 p{
+	margin-top:15px;
+}
+p.tit{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2NdovaunAQeBjSZFGXXazoFXa_!!1105832541.jpg) no-repeat scroll center center;
+	width:396px;
+	height:33px;
+	color:#f39800;
+	font-weight:bold;
+}
+p.word{
+	color:#535353;
+	font-size:22px;
+	text-align:left;
+}
+.btn01{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 0;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn01.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -100px;
+}
+.btn02{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -200px;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn02.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -300px;
+}
+.btn03{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -400px;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn03.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -500px;
+}
+.btn04{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -600px;;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn04.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -700px;
+}
+.btn05{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -800px;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn05.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -900px;
+}
+.btn06{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -1000px;
+	width:182px;
+	height:100px;
+	display:inline-block;
+}
+.btn06.on{
+	background:url(//img.alicdn.com/imgextra/i2/1105832541/TB2roOvaF95V1Bjy0FlXXaBbXXa_!!1105832541.png) no-repeat scroll 0 -1100px;
+}
+.page5{
+	width:495px;
+	margin:0 auto;
+}
+.swiper-container1{
+	width:400px;
+	margin:0 auto;
+	height:600px;
+	overflow:hidden;
+}
+.num_list{
+	width:100%;
+	margin-top:15px;
+	position:relative;
+}
+p.nn{
+	padding:5px 0;
+	margin-top:15px;
+	color:#535353;
+}
+p.name{
+	background-color:#f39800;
+	color:#fff;
+}
+.ul4{
+	position:absolute;
+	top:0;
+	left:3px;
+}
+.ul4 li{
+	float:left;
+	margin-right:22px;
+	position:relative;
+}
+.ul4 li:last-child{
+	margin-right:0;
+}
+.plo_message{
+	position:absolute;
+	left:3px;
+	top:230px;
+	background:#f39800;
+	color:#fff;
+	padding:15px 25px;
+	width:345px;
+}
+.plo_message p{
+	margin-top:5px;
+}
+.bg_img{
+	position:absolute;
+	top:-15px;
+	left:40px;
+}
+.bg_img02{
+	position:absolute;
+	top:-15px;
+	left:180px;
+}
+.bg_img03{
+	position:absolute;
+	top:-15px;
+	left:320px;
+}
+.bg_img04{
+	position:absolute;
+	top:-15px;
+	left:100px;
+}
+.bg_img05{
+	position:absolute;
+	top:-15px;
+	left:250px;
+}
+.swiper-slide1{
+	-webkit-align-items: flex-start;
+	align-items: flex-start;
+}
+p.plo_name{
+	font-weight:bold;
+	text-align:left;
+	font-size:24px;
+}
+p.plo_zw{
+	font-weight:bold;
+	text-align:left;
+	font-size:20px;
+}
+p.plo_word{
+	text-align:left;
+	font-size:20px;
+}
+.right{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB29DmsaGi5V1Bjy1zcXXb0oXXa_!!1105832541.png) no-repeat scroll center center;
+	width:17px;
+	height:35px;
+	position:absolute;
+	right:38px;
+	top:50%;
+	margin-top:-17px;
+}
+.pic4{
+	opacity:0;
+	transform:translate(0,-243px);
+	-webkit-transform:translate(0,-243px);
+}
+.page3.on .pic4,.page4.on .pic4{
+	opacity:1;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1.5s ease 0s;
+	-webkit-transition:all 1.5s ease 0s;
+}
+.bao{
+	opacity:0;
+	transform:translate(0,500px);
+	-webkit-transform:translate(0,500px);
+}
+.page3.on .bao,.page4.on .bao{
+	opacity:1;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1.5s ease 0s;
+	-webkit-transition:all 1.5s ease 0s;
+}
+.swiper-button-next1{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2JOqwaGi5V1BjSspiXXXGBFXa_!!1105832541.png) no-repeat -18px 0;
+	width:17px;
+	height:35px;
+	position:absolute;
+	right:10px;
+	top:50%;
+	margin-top:-17px;
+	z-index:10;
+	left:auto;
+}
+.swiper-button-prev1{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2JOqwaGi5V1BjSspiXXXGBFXa_!!1105832541.png) no-repeat 0 0;
+	width:17px;
+	height:35px;
+	position:absolute;
+	left:10px;
+	top:50%;
+	margin-top:-17px;
+	z-index:10;
+	right:auto;
+}
+.swiper-button-next1.swiper-button-disabled,.swiper-button-prev1.swiper-button-disabled{opacity:.35;cursor:auto;pointer-events:none}
+.ss_box{
+	height:600px;
+}
+/*****************企业客户市场**********************/
+.main{
+	position:relative;
+	width:100%;
+	height:100%;
+	background-color:#eee;
+}
+.content2 h4{
+	padding-left:8px;
+	color:#434343;
+	border-left:5px solid #f39800;
+	font-weight:bold;
+}
+p.word1{
+	color:#535353;
+	font-size:22px;
+	line-height:35px;
+}
+p.line{
+	border-bottom:1px dashed #959595;
+}
+p.p_img{
+	text-align:center;
+}
+.p_img1{
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2MWutaGi5V1BjSspeXXcWPFXa_!!1105832541.png) no-repeat scroll center center;
+	height:151px;
+	margin-bottom:20px;
+	opacity:0;
+	transform:translate(0,-151px);
+	-webkit-transform:translate(0,-151px);
+	width:100%;
+}
+.main.on .p_img1{
+	opacity:1;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1s ease 0s;
+	-webkit-transition:all 1s ease 0s;
+}
+.dot{
+	background-color:#278dbf;
+	width:4px;
+	height:4px;
+	border-radius:50%;
+	position:absolute;
+}
+.dot1{
+	left:175px;
+	top:48px;
+	opacity:0;
+}
+.main.on .dot1{
+	opacity:1;
+	transition:all 0.5s ease 1.2s;
+	-webkit-transition:all 0.5 ease 1.2s;
+}
+.dot2{
+	left:203px;
+	top:36px;
+	opacity:0;
+}
+.main.on .dot2{
+	opacity:1;
+	transition:all 0.5s ease 1.3s;
+	-webkit-transition:all 0.5 ease 1.3s;
+}
+.dot3{
+	left:240px;
+	top:45px;
+	opacity:0;
+}
+.main.on .dot3{
+	opacity:1;
+	transition:all 0.5s ease 1.4s;
+	-webkit-transition:all 0.5 ease 1.4s;
+}
+.dot4{
+	left:277px;
+	top:34px;
+	opacity:0;
+}
+.main.on .dot4{
+	opacity:1;
+	transition:all 0.5s ease 1.5s;
+	-webkit-transition:all 0.5 ease 1.5s;
+}
+.dot5{
+	left:305px;
+	top:45px;
+	opacity:0;
+}
+.main.on .dot5{
+	opacity:1;
+	transition:all 0.5s ease 1.6s;
+	-webkit-transition:all 0.5 ease 1.6s;
+}
+.btn07{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 0;
+	width:186px;
+	height:109px;
+	display:inline-block;
+}
+.btn07.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -109px;
+}
+.btn08{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -218px;
+	width:186px;
+	height:109px;
+	display:inline-block;
+}
+.btn08.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -327px;
+}
+.btn09{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -436px;
+	width:186px;
+	height:109px;
+	display:inline-block;
+}
+.btn09.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -545px;
+}
+.btn10{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -654px;
+	width:186px;
+	height:109px;
+	display:inline-block;
+}
+.btn10.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -763px;
+}
+.mCSB_scrollTools{
+	height:500px !important;
+}
+.btn11{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -872px;
+	width:186px;
+	height:110px;
+	display:inline-block;
+}
+.btn11.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -982px;
+}
+.btn12{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1092px;
+	width:186px;
+	height:110px;
+	display:inline-block;
+}
+.btn12.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1202px;
+}
+.btn13{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1312px;
+	width:186px;
+	height:110px;
+	display:inline-block;
+}
+.btn13.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1422px;
+}
+.btn14{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1532px;
+	width:186px;
+	height:110px;
+	display:inline-block;
+}
+.btn14.on{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB29Eq7X71M.eBjSZFOXXc0rFXa_!!1105832541.png) no-repeat scroll 0 -1642px;
+}
+.line1{
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2JxGuaGm5V1BjSspjXXcGFpXa_!!1105832541.png) no-repeat scroll center center;
+	width:129px;
+	height:14px;
+	position:absolute;
+	left:178px;
+	top:35px;
+	opacity:0;
+	transform:translate(0,-14px);
+	-webkit-transform:translate(0,-14px);
+}
+.main.on .line1{
+	opacity:1;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+	transition:all 1.5s ease 2s;
+	-webkit-transition:all 1.5s ease 2s;
+}
+.p_img2{
+	background:url(//img.alicdn.com/imgextra/i3/1105832541/TB2765paF95V1Bjy0FgXXc2vFXa_!!1105832541.png) no-repeat scroll center center;
+	height:157px;
+	width:100%;
+	margin-bottom:20px;
+	transform:translate(0,-157px);
+	-webkit-transform:translate(0,-157px);
+	opacity:0;
+}
+.main.on .p_img2{
+	opacity:1;
+	transition:all 1s ease 0s;
+	-webkit-transition:all 1s ease 0s;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+}
+.people_inco{
+	background:url(//img.alicdn.com/imgextra/i4/1105832541/TB2ONOqaGm5V1BjSszfXXXjxXXa_!!1105832541.png) no-repeat scroll center center;
+	width:95px;
+	height:109px;
+	position:absolute;
+	left:160px;
+	top:35px;
+	opacity:0;
+	transform:translate(0,95px);
+	-webkit-transform:translate(0,95px);
+}
+.main.on .people_inco{
+	opacity:1;
+	transition:all 1s ease 1s;
+	-webkit-transition:all 1s ease 1s;
+	transform:translate(0,0);
+	-webkit-transform:translate(0,0);
+}
+.airplan{
+	background:url(//img.alicdn.com/imgextra/i1/1105832541/TB2XxyoaGi5V1BjSszcXXaDLXXa_!!1105832541.png) no-repeat scroll center center;
+	width:37px;
+	height:10px;
+	position:absolute;
+	left:300px;
+	top:80px;
+}
+@keyframes fly {
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-150px, -20px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-150px, -20px);
+	}
+}
+@keyframes fly {
+	0% {
+		opacity: 1;
+		transform: translate(0px, 0px);
+	}
+	80% {
+		opacity: 1;
+		transform: translate(-150px, -40px);
+	}
+	100% {
+		opacity: 0;
+		transform: translate(-150px, -40px);
+	}
+}
+.main.on .airplan{
+	animation: fly 5s linear infinite 1s;
+	-webkit-animation: fly 5s linear infinite 1s;
+    opacity: 0;
+}
+/*********************核心能力***************************/
+.img_box{
+	width:230px;
+	height:230px;
+	border:1px solid #b7b7b7;
+	border-radius:50%;
+	padding:17px;
+	margin:0 auto;
+}
+.img_box img{
+	width:230px;
+	height:230px;
+	border-radius:50%;
+}
+.c_con{
+	width:460px;
+	text-align:center;
+}
+.c_con h2{
+	padding-left:8px;
+	color:#434343;
+	border-left:5px solid #f39800;
+	font-weight:bold;
+	display:inline-block;
+	margin-top:55px;
+}
+.c_con p{
+	text-align:left;
+	margin-top:50px;
+}
