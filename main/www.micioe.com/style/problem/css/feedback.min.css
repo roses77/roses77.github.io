@@ -1,0 +1,130 @@
+﻿.page-main {
+	padding-top: 40px;
+	padding-bottom: 40px
+}
+.feedback-main {
+	height: 620px;
+	padding: 0 48px 48px;
+	background-color: #fff
+}
+.feedback-nav {
+	height: 18px;
+	padding: 30px 0;
+	margin: 0;
+	border-bottom: 1px solid #e0e0e0
+}
+.feedback-nav li {
+	float: left;
+	list-style: none;
+	margin: 0;
+	font-size: 18px;
+	line-height: 1;
+	color: #424242
+}
+.feedback-nav .tab-active {
+	color: #ff6700
+}
+.user-info {
+	float: left;
+	width: 76px
+}
+.user-info .avatar {
+	display: block;
+	width: 54px;
+	height: 54px;
+	margin-top: 68px;
+	border-radius: 27px;
+	overflow: hidden;
+	_zoom: 1;
+	background-color: #333
+}
+.form-box {
+	float: left
+}
+.form-box .title {
+	height: 68px;
+	margin: 0;
+	line-height: 68px;
+	font-weight: normal;
+	color: #424242
+}
+.form-box .form-section {
+	margin-bottom: 20px
+}
+.form-box .input-textarea {
+	width: 710px;
+	height: 100px
+}
+.form-box .input-url {
+	width: 460px
+}
+.captcha-box {
+	margin-bottom: 20px
+}
+.captcha-box .form-section {
+	float: left
+}
+.captcha-box .form-section .input-text {
+	width: 120px
+}
+.captcha-box .captcha-img {
+	float: left
+}
+.captcha-box .captcha-img img {
+	float: left;
+	height: 40px;
+	margin-right: 10px
+}
+.captcha-box .captcha-img a {
+	float: left;
+	height: 40px;
+	line-height: 40px
+}
+.feedback-list {
+	height: 668px;
+	background-color: #fff;
+	padding-left: 40px;
+	padding-right: 28px;
+	color: #424242
+}
+.feedback-list .title {
+	margin: 0;
+	height: 68px;
+	line-height: 68px
+}
+.feedback-list .faq816 {
+	display: block;
+	margin-bottom: 10px;
+	color: #ff6700
+}
+.feedback-list .faq816 .iconfont {
+	display: inline-block;
+*zoom:1;
+*display:inline;
+	width: 18px;
+	height: 18px;
+	line-height: 18px;
+	text-align: center;
+	border-radius: 9px;
+	background-color: #ff6700;
+	color: #fff;
+	font-size: 12px;
+	margin-left: 5px
+}
+.feedback-list ul, .feedback-list li {
+	margin: 0;
+	padding: 0
+}
+.feedback-list li {
+	margin-bottom: 20px;
+	list-style: none;
+	line-height: 2
+}
+.feedback-list dl, .feedback-list dt, .feedback-list dd {
+	margin: 0;
+	padding: 0
+}
+.feedback-list dd {
+	font-size: 12px;
+	color: #757575
+}
